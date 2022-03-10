@@ -42,9 +42,10 @@
 
 
                       {% for multi_target in (1..3) %}
-                      {% assign target = "history_target_" | append: i | append: "_" | append: multi_target%}
+                      {% assign target = "history_target_" | append: i | append: "_" | append: multi_target %}
                         {% if indicator[target] %}
                           {% assign multi_target_key = target_key | append: "_" | append: multi_target %}
+                          {% assign target_year_key = "history_target_year_" | append: i | append: "_" | append: multi_target %}
                           <tr>
                             <th> <div class=responsiveText>{{ t.summary.target }}</div></th>
                             <td colspan="9"> <div class=responsiveText>{{ t.summary[multi_target_key] }}</div> </td> <!--{{ indicator[target]}}</div> </td>-->
@@ -57,10 +58,16 @@
                             {% for j in letters %}
                               {% assign year = "history_year_" | append: j | append: "_" | append: i | append: "_" | append: multi_target %}
                               {% if indicator[year] %}
-                                {% if j == 'i' or j == 'h' or j == 'g' or j == 'f' or j == 'e' %}
-                                  <td width="10%" align="center" class="hidden-xs"> <p><span class="responsiveText hidden-xs">{{ indicator[year] }}</span></p> </td>
+                                {% if indicator[year] < indicator[target_year_key] %}
+                                  {% assign opacity = ' style="opacity: 0.2"' %}
                                 {% else %}
-                                  <td width="10%" align="center"> <p><span class="responsiveText">{{ indicator[year] }}</span></p> </td>
+                                  {% assign opacity = '' %}
+                                {% endif %
+                                }
+                                {% if j == 'i' or j == 'h' or j == 'g' or j == 'f' or j == 'e' %}
+                                  <td width="10%" align="center" class="hidden-xs"> <p {{ opacity }}><span class="responsiveText hidden-xs">{{ indicator[year] }}</span></p> </td>
+                                {% else %}
+                                  <td width="10%" align="center"> <p {{ opacity }}><span class="responsiveText">{{ indicator[year] }}</span></p> </td>
                                 {% endif %}
 
                                 {% assign add = add | minus: 1 %}
@@ -97,6 +104,10 @@
                                 {% elsif indicator[status] == 'Blitz' %}
                                   {% assign status_title = t.status['blitz'] %}
                                 {% endif %}
+
+
+                              
+
 
                                 {% if j == 'i' or j == 'h' or j == 'g' or j == 'f' or j == 'e' %}
                                   <td width="10%" align="center" class="hidden-xs"> <a href=" {{ site.baseurl }}{{ baseurl_folder }}/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/{{ current_language }}/{{ indicator[status] }}.png" alt="{{ indicator[status] }}" class="responsiveWeather hidden-xs" title="{{ status_title }}"/></a> </td>
