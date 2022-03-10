@@ -22,7 +22,7 @@ remotedatabaseurl: "https://mobosse.github.io/dns-data"
 jekyll_get_json:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://dnstestenvironment.github.io/dns-data/meta/all.json'
+    json: 'https://mobosse.github.io/dns-data/meta/all.json'
   - data: headlines
     # Replace my-github-org and open-sdg-data-starter as needed.
     json: 'https://mobosse.github.io/dns-data/headline/all.json'
