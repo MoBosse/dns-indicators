@@ -17,7 +17,7 @@ url: ""
 data_dir: data
 environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://dnstestenvironment.github.io/dns-data"
+remotedatabaseurl: "https://mobosse.github.io/dns-data"
 
 jekyll_get_json:
   - data: meta
