@@ -48,6 +48,7 @@
                           {% assign multi_target_key = target_key | append: "_" | append: multi_target %} <!--7-1-ab_2_target_1-->
                           {% assign prev_target = multi_target | minus: 1%}
                           {% assign previous_target_year_key = "history_target_year_" | append: i | append: "_" | append: prev_target %}
+                          {% assign target_year_key = "history_target_year_" | append: i | append: "_" | append: multi_target %}
                           <tr>
                             <th> <div class=responsiveText>{{ t.summary.target }}</div></th>
                             <td colspan="9"> <div class=responsiveText>{{ t.summary[multi_target_key] }}</div> </td> <!--{{ indicator[target]}}</div> </td>-->
@@ -60,7 +61,7 @@
                             {% for j in letters %}
                               {% assign year = "history_year_" | append: j | append: "_" | append: i | append: "_" | append: multi_target %}
                               {% if indicator[year] %}
-                                {% if multi_target > 1 and indicator[year] <= indicator[previous_target_year_key] %}
+                                {% if indicator[year] > indicator[target_year_key] and indicator[year] <= indicator[previous_target_year_key] %}
                                   {% assign opacity = ' style="opacity: 0.2"' %}
                                 {% else %}
                                   {% assign opacity = '' %}
