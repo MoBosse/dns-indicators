@@ -25,12 +25,12 @@
               {% for indicator in group.items %}
                 {% for i in (1..3) %}
                   {% assign hty_active = "history_active_" | append: i %}
-                  {% assign hty_indicator = "history_indicator_" | append: i %}
-                  {% assign idc_sort_order = indicator["indicator_sort_order"] %}
+                  {% assign hty_indicator = "history_indicator_" | append: i %}  <!--history_indicator_2-->
+                  {% assign idc_sort_order = indicator["indicator_sort_order"] %} <!--7-1-ab-->
                   {% if indicator[hty_active] == true %}
 
-                    {% assign indicator_key = idc_sort_order | append: "_" | append: i %}
-                    {% assign target_key = indicator_key | append: "_target" %} <!--7-1-ab_2_target-->
+                    {% assign indicator_key = idc_sort_order | append: "_" | append: i %} <!--7-1-ab_2-->
+
 
                     <table class="table table-hover tableresp">
                       <tr>
@@ -42,9 +42,10 @@
 
 
                       {% for multi_target in (1..3) %}
+                      {% assign target_key = indicator_key | append: "_target" %} <!--7-1-ab_2_target-->
                       {% assign target = "history_target_" | append: i | append: "_" | append: multi_target %}
                         {% if indicator[target] %}
-                          {% assign multi_target_key = target_key | append: "_" | append: multi_target %}
+                          {% assign multi_target_key = target_key | append: "_" | append: multi_target %} <!--7-1-ab_2_target_1-->
                           {% assign target_year_1_key = "history_target_year_" | append: i | append: "_1" %}
                           <tr>
                             <th> <div class=responsiveText>{{ t.summary.target }}</div></th>
