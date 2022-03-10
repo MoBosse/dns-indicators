@@ -4,7 +4,7 @@
 remote_theme: open-sdg/open-sdg@1.7.0
 
 # Replace this title as needed.
-title: general.site_title
+title: Mo's TestSeite
 url: ""
 environment: staging
 
@@ -36,4 +36,3 @@ exclude:
   - README
   - README.md
   - LICENSE
-
