@@ -54,10 +54,10 @@ email_contacts:
 
 # Github Repo for Data
 # Replace this value as needed.
-repo_name: open-sdg-data-starter
+repo_name: dns-data
 branch: develop
 # Replace this value as needed.
-org_name: sustainabledevelopment-deutschland
+org_name: MoBosse
 
 # Build settings
 markdown: kramdown
