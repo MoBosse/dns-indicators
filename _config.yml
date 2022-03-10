@@ -28,7 +28,7 @@ jekyll_get_json:
     json: 'https://dnstestenvironment.github.io/dns-data/headline/all.json'
   - data: schema
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://dnstestenvironment.github.io/dns-data/meta/schema.json'
+    json: 'https://mobosse.github.io/dns-data/meta/schema.json'
   - data: reporting
     # Replace my-github-org and open-sdg-data-starter as needed.
     json: 'https://mobosse.github.io/dns-data/stats/reporting.json'
