@@ -94,13 +94,13 @@ var translations = {
         <!---#15 setCorrectTitle---start-------------------->
         <title>
           
-            
+            Indikatoren zur Nachhaltigkeitsstrategie für Deutschland
           
         </title>
         <!---#15 setCorrectTitle---stop--------------------->
 
         
-          <meta name="description" content= "" >
+          <meta name="description" content= "Übersichtlicher Stand der Indikatoren der 17 Sustainable Development Goals (SDGs) in Deutschland samt öffentlich zur Verfügung stehender Datengrundlage" >
         
 
         <meta property="og:description" content="">
@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/dns-indicators/assets/css/default.css?v=20220314131540">
+        <link rel="stylesheet" href="/dns-indicators/assets/css/default.css?v=20220314132309">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -146,7 +146,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/dns-indicators/assets/css/custom.css?v=20220314131540"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/dns-indicators/assets/css/custom.css?v=20220314132309"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-de layout-status_summary">
@@ -154,14 +154,14 @@ var translations = {
 
 
 
-<script>translations['header'] = {"alpha":"Alpha-Version","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium.Wir freuen uns über Ihre Kommentare.","skip_link":" Zum Hauptinhalt springen","tag_line":""};</script>
+<script>translations['header'] = {"alpha":"Alpha-Version","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href=\"mailto:%email_address\">Kommentare</a>.","skip_link":" Zum Hauptinhalt springen","tag_line":""};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"> Zum Hauptinhalt springen</a>
 <div id="disclaimer">
   <div class="container">
   <div class="alert alert-danger" role="alert">
     <strong class="phase-tag">Alpha-Version</strong>
-    Diese Seite befindet sich im Entwicklungsstadium.Wir freuen uns über Ihre Kommentare.
+    Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href="mailto:DNS-Indikatoren@destatis.de">Kommentare</a>.
   </div>
 </div>
 
@@ -171,7 +171,7 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/dns-indicators/" id="home">
-      <img src="/dns-indicators/assets/img/dns_logo.png" alt=" - " />
+      <img src="/dns-indicators/assets/img/dns_logo.png" alt="Nachhaltige Entwicklung in Deutschland - " />
     </a>
 
   <div class='hidden visible-xs float-right'>
@@ -202,45 +202,45 @@ var translations = {
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu">
               
                 <li class="nav-link ">
-                  <a href="/dns-indicators/">general.seventeen_goals</a>
+                  <a href="/dns-indicators/">17 Ziele</a>
                 </li>
               
             
               <li class="nav-link active hidden-sm hidden-md hidden-lg">
-                <a href="/dns-indicators/status_summary">Status - menu.status_summary</a>
+                <a href="/dns-indicators/status_summary">Status - Übersicht</a>
               </li>
             
               <li class="nav-link  hidden-sm hidden-md hidden-lg">
-                <a href="/dns-indicators/status">Status - menu.status</a>
+                <a href="/dns-indicators/status">Status - Methodik</a>
               </li>
             
               <li class="nav-link  hidden-sm hidden-md hidden-lg">
-                <a href="/dns-indicators/about/">menu.about_this_site</a>
+                <a href="/dns-indicators/about/">Die&nbspDNS&#8209;Online&nbspPlattform</a>
               </li>
             
               <li class="nav-link  hidden-sm hidden-md hidden-lg">
-                <a href="/dns-indicators/guidance/">Technische Hinweise</a>
+                <a href="/dns-indicators/guidance/">Technische&nbspHinweise</a>
               </li>
             
               <li class="nav-link  hidden-sm hidden-md hidden-lg">
-                <a href="/dns-indicators/facts_agenda/">menu.facts_agenda</a>
+                <a href="/dns-indicators/facts_agenda/">Agenda 2030</a>
               </li>
             
               
             <li class="nav-link visible-sm visible-md visible-lg">
           <a class="status-toggle-button" onclick="$(this).next('.status-toggle').toggle(); return false;" style="margin-right: 0px;">
             <!--<i class="fa fa-globe"></i>-->
-            <span class="status-toggle-text"></span>
+            <span class="status-toggle-text">Bewertung</span>
             <i class="status-toggle fa fa-chevron-down"></i>
             <!--<i class="status-toggle fa fa-chevron-up" style="display:none;"></i>-->
           </a>
           <ul class="status-options status-toggle">
                   <li class="nav-link active">
-                    <a href="/dns-indicators/status_summary">menu.status_summary</a>
+                    <a href="/dns-indicators/status_summary">Übersicht</a>
                   </li>
                 
                   <li class="nav-link ">
-                    <a href="/dns-indicators/status">menu.status</a>
+                    <a href="/dns-indicators/status">Methodik</a>
                   </li>
                 </ul>
         </li>
@@ -254,11 +254,11 @@ var translations = {
           </a>
           <ul class="status-options status-toggle">
                   <li class="nav-link ">
-                    <a href="/dns-indicators/about/">menu.about_this_site</a>
+                    <a href="/dns-indicators/about/">Die&nbspDNS&#8209;Online&nbspPlattform</a>
                   </li>
                 
                   <li class="nav-link ">
-                    <a href="/dns-indicators/guidance/">Technische Hinweise</a>
+                    <a href="/dns-indicators/guidance/">Technische&nbspHinweise</a>
                   </li>
                 </ul>
         </li>
@@ -266,17 +266,17 @@ var translations = {
         <li class="nav-link visible-sm visible-md visible-lg">
           <a class="status-toggle-button" onclick="$(this).next('.status-toggle').toggle(); return false;" style="margin-right: 0px;">
             <!--<i class="fa fa-globe"></i>-->
-            <span class="status-toggle-text"></span>
+            <span class="status-toggle-text">Wissenswertes</span>
             <i class="status-toggle fa fa-chevron-down"></i>
             <!--<i class="status-toggle fa fa-chevron-up" style="display:none;"></i>-->
           </a>
           <ul class="status-options status-toggle">
                   <li class="nav-link ">
-                    <a href="/dns-indicators/facts_agenda/">menu.facts_agenda</a>
+                    <a href="/dns-indicators/facts_agenda/">Agenda 2030</a>
                   </li>
                 </ul>
         </li><li class="nav-link ">
-              <a href="/dns-indicators/publications/">Veröffentlichungen</a>
+              <a href="/dns-indicators/publications/">Publikationen</a>
             </li><li>
           <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
   <i class="fa fa-globe"></i>
@@ -289,8 +289,8 @@ var translations = {
         </li><!---#17 addLinkToOtherPage---start------------>
         <li class="nav-link">
           <a href="https://sustainabledevelopment-germany.github.io//">
-            <img class="link_btn" src="https://g205sdgs.github.io/sdg-indicators/public/SDG Wheel_Transparent.png" title="" alt="Link SDG" style="width:24px;height:24px;"/>
-            <span class="hidden-sm hidden-md hidden-lg">SDG-</span>
+            <img class="link_btn" src="https://g205sdgs.github.io/sdg-indicators/public/SDG Wheel_Transparent.png" title="Zur Seite der globalen Indikatoren" alt="Link SDG" style="width:24px;height:24px;"/>
+            <span class="hidden-sm hidden-md hidden-lg">SDG-Berichtsplattform</span>
           </a>
         </li>
         <!---#17 addLinkToOtherPage---stop------------->
@@ -311,15 +311,15 @@ var translations = {
 
 <div id="main-content" class="container reportingstatus">
 
-  <h1></h1><div class="goal">
+  <h1>Statusübersicht - Bewertung für Deutschland aus den Vorjahren</h1><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/1/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/1.png" alt=" - Ziel 1" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/1.png" alt="Keine Armut! - Ziel 1" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/1/"><span class="visible-xs"> 1 - <span></a>
+            <a href="/dns-indicators/1/"><span class="visible-xs"> 1 - <span>Keine Armut!</a>
           </h3>
           
             
@@ -335,8 +335,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/1-1-ab/ "><div class=responsiveText></div></a> </th> <!--1.1.a Materielle Deprivation</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/1-1-ab/ "><div class=responsiveText>1.1.a - Materielle Deprivation</div></a> </th> <!--1.1.a Materielle Deprivation</div></a> </th>-->
                       </tr>
 
 
@@ -375,8 +375,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/1-1-ab/ "><div class=responsiveText></div></a> </th> <!--1.1.b Erhebliche materielle Deprivation</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/1-1-ab/ "><div class=responsiveText>1.1.b - Erhebliche materielle Deprivation</div></a> </th> <!--1.1.b Erhebliche materielle Deprivation</div></a> </th>-->
                       </tr>
 
 
@@ -421,12 +421,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/2/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/2.png" alt=" - Ziel 2" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/2.png" alt="Kein Hunger - Ziel 2" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/2/"><span class="visible-xs"> 2 - <span></a>
+            <a href="/dns-indicators/2/"><span class="visible-xs"> 2 - <span>Kein Hunger</a>
           </h3>
           
             
@@ -442,8 +442,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/2-1-a/ "><div class=responsiveText></div></a> </th> <!--2.1.a Stickstoffüberschuss der Landwirtschaft</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/2-1-a/ "><div class=responsiveText>2.1.a - Stickstoffüberschuss der Landwirtschaft</div></a> </th> <!--2.1.a Stickstoffüberschuss der Landwirtschaft</div></a> </th>-->
                       </tr>
 
 
@@ -494,8 +494,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/2-1-b/ "><div class=responsiveText></div></a> </th> <!--2.1.b Ökologischer Landbau</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/2-1-b/ "><div class=responsiveText>2.1.b - Ökologischer Landbau</div></a> </th> <!--2.1.b Ökologischer Landbau</div></a> </th>-->
                       </tr>
 
 
@@ -548,8 +548,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/2-2-a/ "><div class=responsiveText></div></a> </th> <!--2.2 Unterstützung guter Regierungsführung bei der Erreichung einer angemessenen Ernährung weltweit</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/2-2-a/ "><div class=responsiveText>2.2 - Unterstützung guter Regierungsführung bei der Erreichung einer angemessenen Ernährung weltweit</div></a> </th> <!--2.2 Unterstützung guter Regierungsführung bei der Erreichung einer angemessenen Ernährung weltweit</div></a> </th>-->
                       </tr>
 
 
@@ -599,12 +599,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/3/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/3.png" alt=" - Ziel 3" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/3.png" alt="Gesundheit und Wohlergehen - Ziel 3" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/3/"><span class="visible-xs"> 3 - <span></a>
+            <a href="/dns-indicators/3/"><span class="visible-xs"> 3 - <span>Gesundheit und Wohlergehen</a>
           </h3>
           
             
@@ -620,8 +620,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-1-ab/ "><div class=responsiveText></div></a> </th> <!--3.1.a Vorzeitige Sterblichkeit (Frauen)</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-1-ab/ "><div class=responsiveText>3.1.a - Vorzeitige Sterblichkeit (Frauen)</div></a> </th> <!--3.1.a Vorzeitige Sterblichkeit (Frauen)</div></a> </th>-->
                       </tr>
 
 
@@ -660,95 +660,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-1-ab/ "><div class=responsiveText></div></a> </th> <!--3.1.b Vorzeitige Sterblichkeit (Männer)</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-              
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-1-cd/ "><div class=responsiveText></div></a> </th> <!--3.1.c Raucherquote von Jugendlichen</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-1-cd/ "><div class=responsiveText></div></a> </th> <!--3.1.d Raucherquote von Erwachsenen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-1-ab/ "><div class=responsiveText>3.1.b - Vorzeitige Sterblichkeit (Männer)</div></a> </th> <!--3.1.b Vorzeitige Sterblichkeit (Männer)</div></a> </th>-->
                       </tr>
 
 
@@ -794,8 +707,48 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-1-e/ "><div class=responsiveText></div></a> </th> <!--3.1.e Adipositasquote von Kindern und Jugendlichen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-1-cd/ "><div class=responsiveText>3.1.c - Raucherquote von Jugendlichen</div></a> </th> <!--3.1.c Raucherquote von Jugendlichen</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-1-cd/ "><div class=responsiveText>3.1.d - Raucherquote von Erwachsenen</div></a> </th> <!--3.1.d Raucherquote von Erwachsenen</div></a> </th>-->
                       </tr>
 
 
@@ -829,11 +782,6 @@ var translations = {
                    <!--7-1-ab-->
                   
                 
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
               
                 
                   
@@ -846,62 +794,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-1-f/ "><div class=responsiveText></div></a> </th> <!--3.1.f Adipositasquote von Erwachsenen</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-              
-            
-              
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-2-a/ "><div class=responsiveText></div></a> </th> <!--3.2.a Emissionen von Luftschadstoffen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-1-e/ "><div class=responsiveText>3.1.e - Adipositasquote von Kindern und Jugendlichen</div></a> </th> <!--3.1.e Adipositasquote von Kindern und Jugendlichen</div></a> </th>-->
                       </tr>
 
 
@@ -952,8 +846,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-2-b/ "><div class=responsiveText></div></a> </th> <!--3.2.b Anteil der Bevölkerung mit erhöhter PM<sub>10</sub>-Feinstaubexposition</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-1-f/ "><div class=responsiveText>3.1.f - Adipositasquote von Erwachsenen</div></a> </th> <!--3.1.f Adipositasquote von Erwachsenen</div></a> </th>-->
                       </tr>
 
 
@@ -1006,8 +900,114 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/3-3-a/ "><div class=responsiveText></div></a> </th> <!--3.3 Beitrag Deutschlands zur globalen Pandemieprävention und -reaktion</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-2-a/ "><div class=responsiveText>3.2.a - Emissionen von Luftschadstoffen</div></a> </th> <!--3.2.a Emissionen von Luftschadstoffen</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+              
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-2-b/ "><div class=responsiveText>3.2.b - Anteil der Bevölkerung mit erhöhter PM<sub>10</sub>-Feinstaubexposition</div></a> </th> <!--3.2.b Anteil der Bevölkerung mit erhöhter PM<sub>10</sub>-Feinstaubexposition</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+              
+            
+              
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/3-3-a/ "><div class=responsiveText>3.3 - Beitrag Deutschlands zur globalen Pandemieprävention und -reaktion</div></a> </th> <!--3.3 Beitrag Deutschlands zur globalen Pandemieprävention und -reaktion</div></a> </th>-->
                       </tr>
 
 
@@ -1057,12 +1057,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/4/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/4.png" alt=" - Ziel 4" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/4.png" alt="Hochwertige Bildung - Ziel 4" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/4/"><span class="visible-xs"> 4 - <span></a>
+            <a href="/dns-indicators/4/"><span class="visible-xs"> 4 - <span>Hochwertige Bildung</a>
           </h3>
           
             
@@ -1078,8 +1078,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/4-1-a/ "><div class=responsiveText></div></a> </th> <!--4.1.a Frühe Schulabgängerinnen und Schulabgänger</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/4-1-a/ "><div class=responsiveText>4.1.a - Frühe Schulabgängerinnen und Schulabgänger</div></a> </th> <!--4.1.a Frühe Schulabgängerinnen und Schulabgänger</div></a> </th>-->
                       </tr>
 
 
@@ -1130,8 +1130,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/4-1-b/ "><div class=responsiveText></div></a> </th> <!--4.1.b Akademisch Qualifizierte und beruflich Höherqualifizierte (30- bis 34-Jährige mit tertiärem oder post-sekundarem nichttertiärem Abschluss)</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/4-1-b/ "><div class=responsiveText>4.1.b - Akademisch Qualifizierte und beruflich Höherqualifizierte (30- bis 34-Jährige mit tertiärem oder post-sekundarem nichttertiärem Abschluss)</div></a> </th> <!--4.1.b Akademisch Qualifizierte und beruflich Höherqualifizierte (30- bis 34-Jährige mit tertiärem oder post-sekundarem nichttertiärem Abschluss)</div></a> </th>-->
                       </tr>
 
 
@@ -1184,8 +1184,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/4-2-ab/ "><div class=responsiveText></div></a> </th> <!--4.2.a Ganztagsbetreuung für Kinder <br>0- bis 2-Jährige</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/4-2-ab/ "><div class=responsiveText>4.2.a - Ganztagsbetreuung für Kinder <br>0- bis 2-Jährige</div></a> </th> <!--4.2.a Ganztagsbetreuung für Kinder <br>0- bis 2-Jährige</div></a> </th>-->
                       </tr>
 
 
@@ -1224,8 +1224,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/4-2-ab/ "><div class=responsiveText></div></a> </th> <!--4.2.b Ganztagsbetreuung für Kinder <br>3- bis 5-Jährige</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/4-2-ab/ "><div class=responsiveText>4.2.b - Ganztagsbetreuung für Kinder <br>3- bis 5-Jährige</div></a> </th> <!--4.2.b Ganztagsbetreuung für Kinder <br>3- bis 5-Jährige</div></a> </th>-->
                       </tr>
 
 
@@ -1270,12 +1270,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/5/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/5.png" alt=" - Ziel 5" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/5.png" alt="Geschlechtergleichstellung - Ziel 5" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/5/"><span class="visible-xs"> 5 - <span></a>
+            <a href="/dns-indicators/5/"><span class="visible-xs"> 5 - <span>Geschlechtergleichstellung</a>
           </h3>
           
             
@@ -1291,8 +1291,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/5-1-a/ "><div class=responsiveText></div></a> </th> <!--5.1.a Verdienstabstand zwischen Frauen und Männern</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/5-1-a/ "><div class=responsiveText>5.1.a - Verdienstabstand zwischen Frauen und Männern</div></a> </th> <!--5.1.a Verdienstabstand zwischen Frauen und Männern</div></a> </th>-->
                       </tr>
 
 
@@ -1343,8 +1343,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/5-1-bc/ "><div class=responsiveText></div></a> </th> <!--5.1.b Frauen in Führungspositionen in der Wirtschaft</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/5-1-bc/ "><div class=responsiveText>5.1.b - Frauen in Führungspositionen in der Wirtschaft</div></a> </th> <!--5.1.b Frauen in Führungspositionen in der Wirtschaft</div></a> </th>-->
                       </tr>
 
 
@@ -1383,8 +1383,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/5-1-bc/ "><div class=responsiveText></div></a> </th> <!--5.1.c Frauen in Führungspositionen im öffentlichen Dienst des Bundes</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/5-1-bc/ "><div class=responsiveText>5.1.c - Frauen in Führungspositionen im öffentlichen Dienst des Bundes</div></a> </th> <!--5.1.c Frauen in Führungspositionen im öffentlichen Dienst des Bundes</div></a> </th>-->
                       </tr>
 
 
@@ -1430,8 +1430,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/5-1-d/ "><div class=responsiveText></div></a> </th> <!--5.1.d Väterbeteiligung beim Elterngeld</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/5-1-d/ "><div class=responsiveText>5.1.d - Väterbeteiligung beim Elterngeld</div></a> </th> <!--5.1.d Väterbeteiligung beim Elterngeld</div></a> </th>-->
                       </tr>
 
 
@@ -1484,8 +1484,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/5-1-e/ "><div class=responsiveText></div></a> </th> <!--5.1.e Berufliche Qualifizierung von Frauen und Mädchen durch deutsche entwicklungspolitische Zusammenarbeit</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/5-1-e/ "><div class=responsiveText>5.1.e - Berufliche Qualifizierung von Frauen und Mädchen durch deutsche entwicklungspolitische Zusammenarbeit</div></a> </th> <!--5.1.e Berufliche Qualifizierung von Frauen und Mädchen durch deutsche entwicklungspolitische Zusammenarbeit</div></a> </th>-->
                       </tr>
 
 
@@ -1535,12 +1535,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/6/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/6.png" alt=" - Ziel 6" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/6.png" alt="Sauberes Wasser und Sanitärversorgung - Ziel 6" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/6/"><span class="visible-xs"> 6 - <span></a>
+            <a href="/dns-indicators/6/"><span class="visible-xs"> 6 - <span>Sauberes Wasser und Sanitärversorgung</a>
           </h3>
           
             
@@ -1556,8 +1556,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/6-1-a/ "><div class=responsiveText></div></a> </th> <!--6.1.a Phosphor in Fließgewässern</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/6-1-a/ "><div class=responsiveText>6.1.a - Phosphor in Fließgewässern</div></a> </th> <!--6.1.a Phosphor in Fließgewässern</div></a> </th>-->
                       </tr>
 
 
@@ -1608,8 +1608,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/6-1-b/ "><div class=responsiveText></div></a> </th> <!--6.1.b Nitrat im Grundwasser</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/6-1-b/ "><div class=responsiveText>6.1.b - Nitrat im Grundwasser</div></a> </th> <!--6.1.b Nitrat im Grundwasser</div></a> </th>-->
                       </tr>
 
 
@@ -1662,8 +1662,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/6-2-ab/ "><div class=responsiveText></div></a> </th> <!--6.2.a Anzahl der Menschen, die einen neuen oder hochwertigeren Zugang zur Trinkwasserversorgung durch deutsche Unterstützung erhalten</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/6-2-ab/ "><div class=responsiveText>6.2.a - Anzahl der Menschen, die einen neuen oder hochwertigeren Zugang zur Trinkwasserversorgung durch deutsche Unterstützung erhalten</div></a> </th> <!--6.2.a Anzahl der Menschen, die einen neuen oder hochwertigeren Zugang zur Trinkwasserversorgung durch deutsche Unterstützung erhalten</div></a> </th>-->
                       </tr>
 
 
@@ -1702,8 +1702,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/6-2-ab/ "><div class=responsiveText></div></a> </th> <!--6.2.b Anzahl der Menschen, die einen neuen oder verbesserten Anschluss zur Sanitärversorgung durch deutsche Unterstützung erhalten</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/6-2-ab/ "><div class=responsiveText>6.2.b - Anzahl der Menschen, die einen neuen oder verbesserten Anschluss zur Sanitärversorgung durch deutsche Unterstützung erhalten</div></a> </th> <!--6.2.b Anzahl der Menschen, die einen neuen oder verbesserten Anschluss zur Sanitärversorgung durch deutsche Unterstützung erhalten</div></a> </th>-->
                       </tr>
 
 
@@ -1748,12 +1748,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/7/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/7.png" alt=" - Ziel 7" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/7.png" alt="Bezahlbare und saubere Energie - Ziel 7" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/7/"><span class="visible-xs"> 7 - <span></a>
+            <a href="/dns-indicators/7/"><span class="visible-xs"> 7 - <span>Bezahlbare und saubere Energie</a>
           </h3>
           
             
@@ -1769,8 +1769,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/7-1-ab/ "><div class=responsiveText></div></a> </th> <!--7.1.a Endenergieproduktivität</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/7-1-ab/ "><div class=responsiveText>7.1.a - Endenergieproduktivität</div></a> </th> <!--7.1.a Endenergieproduktivität</div></a> </th>-->
                       </tr>
 
 
@@ -1809,8 +1809,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/7-1-ab/ "><div class=responsiveText></div></a> </th> <!--7.1.b Primärenergieverbrauch</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/7-1-ab/ "><div class=responsiveText>7.1.b - Primärenergieverbrauch</div></a> </th> <!--7.1.b Primärenergieverbrauch</div></a> </th>-->
                       </tr>
 
 
@@ -1825,12 +1825,12 @@ var translations = {
                           
                           
                           <tr>
-                            <th> <div class=responsiveText></div></th>
+                            <th> <div class=responsiveText>Ziel</div></th>
                             <td colspan="9"> <div class=responsiveText></div> </td> <!--Senkung um 20&nbsp;% bis 2020 gegenüber 2008</div> </td>-->
                           </tr>
 
                           <tr>
-                            <th> <div class=responsiveText></div> </th>
+                            <th> <div class=responsiveText>Jahr</div> </th>
                             
                             
                             
@@ -1925,7 +1925,7 @@ var translations = {
                           </tr>
 
                           <tr>
-                            <th> <div class=responsiveText></div> </th>
+                            <th> <div class=responsiveText>Bewertung</div> </th>
                             
                               
                               
@@ -1948,7 +1948,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather hidden-xs" title="" /></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather hidden-xs" title="Der Indikator ist 'off track'. Er entwickelt sich zwar in die gewünschte Richtung, bei Fortsetzung der Entwicklung wird das Ziel aber deutlich verfehlt." /></a> </td>
                                 
                               
                             
@@ -1965,7 +1965,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather hidden-xs" title="" /></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather hidden-xs" title="Der Indikator ist 'off track'. Er entwickelt sich zwar in die gewünschte Richtung, bei Fortsetzung der Entwicklung wird das Ziel aber deutlich verfehlt." /></a> </td>
                                 
                               
                             
@@ -1982,7 +1982,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Blitz.png" alt="Blitz" class="responsiveWeather hidden-xs" title="" /></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Blitz.png" alt="Blitz" class="responsiveWeather hidden-xs" title="Der Indikator ist 'off track' und entwickelt sich nicht in die gewünschte Richtung." /></a> </td>
                                 
                               
                             
@@ -1999,7 +1999,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather" title="" /></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather" title="Der Indikator ist 'off track'. Er entwickelt sich zwar in die gewünschte Richtung, bei Fortsetzung der Entwicklung wird das Ziel aber deutlich verfehlt." /></a> </td>
                                 
                               
                             
@@ -2016,7 +2016,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather" title="" /></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather" title="Der Indikator ist 'off track'. Er entwickelt sich zwar in die gewünschte Richtung, bei Fortsetzung der Entwicklung wird das Ziel aber deutlich verfehlt." /></a> </td>
                                 
                               
                             
@@ -2033,7 +2033,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather" title="" /></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Wolke.png" alt="Wolke" class="responsiveWeather" title="Der Indikator ist 'off track'. Er entwickelt sich zwar in die gewünschte Richtung, bei Fortsetzung der Entwicklung wird das Ziel aber deutlich verfehlt." /></a> </td>
                                 
                               
                             
@@ -2050,7 +2050,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title="Der Indikator ist 'off track'. Er entwickelt sich zwar in die gewünschte Richtung, bei Fortsetzung der Entwicklung wird das Ziel aber deutlich verfehlt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2074,12 +2074,12 @@ var translations = {
                           
                           
                           <tr>
-                            <th> <div class=responsiveText></div></th>
+                            <th> <div class=responsiveText>Ziel</div></th>
                             <td colspan="9"> <div class=responsiveText></div> </td> <!--Senkung um 30&nbsp;% bis 2030 gegenüber 2008</div> </td>-->
                           </tr>
 
                           <tr>
-                            <th> <div class=responsiveText></div> </th>
+                            <th> <div class=responsiveText>Jahr</div> </th>
                             
                             
                             
@@ -2174,7 +2174,7 @@ var translations = {
                           </tr>
 
                           <tr>
-                            <th> <div class=responsiveText></div> </th>
+                            <th> <div class=responsiveText>Bewertung</div> </th>
                             
                               
                               
@@ -2197,7 +2197,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Blitz.png" alt="Blitz" class="responsiveWeather hidden-xs" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Blitz.png" alt="Blitz" class="responsiveWeather hidden-xs" title="Der Indikator ist 'off track' und entwickelt sich nicht in die gewünschte Richtung."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2214,7 +2214,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather hidden-xs" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather hidden-xs" title="Der Indikator ist 'on track', die Entwicklung muss sich allerdings noch verbessern, sonst wird das Ziel nicht erfüllt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2231,7 +2231,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather hidden-xs" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather hidden-xs" title="Der Indikator ist 'on track', die Entwicklung muss sich allerdings noch verbessern, sonst wird das Ziel nicht erfüllt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2248,7 +2248,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather" title="Der Indikator ist 'on track', die Entwicklung muss sich allerdings noch verbessern, sonst wird das Ziel nicht erfüllt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2265,7 +2265,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather" title="Der Indikator ist 'on track', die Entwicklung muss sich allerdings noch verbessern, sonst wird das Ziel nicht erfüllt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2282,7 +2282,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Leicht bewölkt.png" alt="Leicht bewölkt" class="responsiveWeather" title="Der Indikator ist 'on track', die Entwicklung muss sich allerdings noch verbessern, sonst wird das Ziel nicht erfüllt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2299,7 +2299,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Sonne.png" alt="Sonne" class="responsiveWeather" title="" /></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/Sonne.png" alt="Sonne" class="responsiveWeather" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt." /></a> </td>
                                 
                               
                             
@@ -2323,12 +2323,12 @@ var translations = {
                           
                           
                           <tr>
-                            <th> <div class=responsiveText></div></th>
+                            <th> <div class=responsiveText>Ziel</div></th>
                             <td colspan="9"> <div class=responsiveText></div> </td> <!--Senkung um 50&nbsp;% bis 2050 gegenüber 2008</div> </td>-->
                           </tr>
 
                           <tr>
-                            <th> <div class=responsiveText></div> </th>
+                            <th> <div class=responsiveText>Jahr</div> </th>
                             
                             
                             
@@ -2423,7 +2423,7 @@ var translations = {
                           </tr>
 
                           <tr>
-                            <th> <div class=responsiveText></div> </th>
+                            <th> <div class=responsiveText>Bewertung</div> </th>
                             
                               
                               
@@ -2446,7 +2446,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather hidden-xs" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather hidden-xs" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2463,7 +2463,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather hidden-xs" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather hidden-xs" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2480,7 +2480,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather hidden-xs" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center" class="hidden-xs"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather hidden-xs" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2497,7 +2497,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2514,7 +2514,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2531,7 +2531,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2548,7 +2548,7 @@ var translations = {
 
 
                                 
-                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title=""  style="opacity: 0.2"/></a> </td>
+                                  <td width="10%" align="center"> <a href=" /dns-indicators/status/ "><img src="https://g205sdgs.github.io/sdg-indicators/public/Wettersymbole/de/.png" alt="" class="responsiveWeather" title="Der Indikator ist 'on track' und wird bei Fortsetzung der Entwicklung das Ziel voraussichtlich erfüllen oder erfüllt es bereits jetzt."  style="opacity: 0.2"/></a> </td>
                                 
                               
                             
@@ -2593,8 +2593,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/7-2-a/ "><div class=responsiveText></div></a> </th> <!--7.2.a Anteil erneuerbarer Energien am Brutto-Endenergieverbrauch</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/7-2-a/ "><div class=responsiveText>7.2.a - Anteil erneuerbarer Energien am Brutto-Endenergieverbrauch</div></a> </th> <!--7.2.a Anteil erneuerbarer Energien am Brutto-Endenergieverbrauch</div></a> </th>-->
                       </tr>
 
 
@@ -2645,8 +2645,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/7-2-b/ "><div class=responsiveText></div></a> </th> <!--7.2.b Anteil des Stroms aus erneuerbaren Energiequellen am Bruttostromverbrauch</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/7-2-b/ "><div class=responsiveText>7.2.b - Anteil des Stroms aus erneuerbaren Energiequellen am Bruttostromverbrauch</div></a> </th> <!--7.2.b Anteil des Stroms aus erneuerbaren Energiequellen am Bruttostromverbrauch</div></a> </th>-->
                       </tr>
 
 
@@ -2696,12 +2696,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/8/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/8.png" alt=" - Ziel 8" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/8.png" alt="Menschenwürdige Arbeit und Wirtschaftswachstum - Ziel 8" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/8/"><span class="visible-xs"> 8 - <span></a>
+            <a href="/dns-indicators/8/"><span class="visible-xs"> 8 - <span>Menschenwürdige Arbeit und Wirtschaftswachstum</a>
           </h3>
           
             
@@ -2717,8 +2717,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-1-a/ "><div class=responsiveText></div></a> </th> <!--8.1 Gesamtrohstoffproduktivität</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-1-a/ "><div class=responsiveText>8.1 - Gesamtrohstoffproduktivität</div></a> </th> <!--8.1 Gesamtrohstoffproduktivität</div></a> </th>-->
                       </tr>
 
 
@@ -2771,8 +2771,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-2-ab/ "><div class=responsiveText></div></a> </th> <!--8.2.a Staatsdefizit</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-2-ab/ "><div class=responsiveText>8.2.a - Staatsdefizit</div></a> </th> <!--8.2.a Staatsdefizit</div></a> </th>-->
                       </tr>
 
 
@@ -2811,8 +2811,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-2-ab/ "><div class=responsiveText></div></a> </th> <!--8.2.b Strukturelles Defizit</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-2-ab/ "><div class=responsiveText>8.2.b - Strukturelles Defizit</div></a> </th> <!--8.2.b Strukturelles Defizit</div></a> </th>-->
                       </tr>
 
 
@@ -2858,62 +2858,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-2-c/ "><div class=responsiveText></div></a> </th> <!--8.2.c Schuldenstand</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-              
-            
-              
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-3-a/ "><div class=responsiveText></div></a> </th> <!--8.3 Verhältnis der Bruttoanlageinvestitionen zum BIP</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-2-c/ "><div class=responsiveText>8.2.c - Schuldenstand</div></a> </th> <!--8.2.c Schuldenstand</div></a> </th>-->
                       </tr>
 
 
@@ -2966,8 +2912,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-4-a/ "><div class=responsiveText></div></a> </th> <!--8.4 Bruttoinlandsprodukt je Einwohner</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-3-a/ "><div class=responsiveText>8.3 - Verhältnis der Bruttoanlageinvestitionen zum BIP</div></a> </th> <!--8.3 Verhältnis der Bruttoanlageinvestitionen zum BIP</div></a> </th>-->
                       </tr>
 
 
@@ -3020,8 +2966,62 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-5-ab/ "><div class=responsiveText></div></a> </th> <!--8.5.a Erwerbstätigenquote insgesamt (20 bis 64 Jahre)</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-4-a/ "><div class=responsiveText>8.4 - Bruttoinlandsprodukt je Einwohner</div></a> </th> <!--8.4 Bruttoinlandsprodukt je Einwohner</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+              
+            
+              
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-5-ab/ "><div class=responsiveText>8.5.a - Erwerbstätigenquote insgesamt (20 bis 64 Jahre)</div></a> </th> <!--8.5.a Erwerbstätigenquote insgesamt (20 bis 64 Jahre)</div></a> </th>-->
                       </tr>
 
 
@@ -3060,8 +3060,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-5-ab/ "><div class=responsiveText></div></a> </th> <!--8.5.b Erwerbstätigenquote Ältere (60 bis 64 Jahre)</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-5-ab/ "><div class=responsiveText>8.5.b - Erwerbstätigenquote Ältere (60 bis 64 Jahre)</div></a> </th> <!--8.5.b Erwerbstätigenquote Ältere (60 bis 64 Jahre)</div></a> </th>-->
                       </tr>
 
 
@@ -3109,8 +3109,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/8-6-a/ "><div class=responsiveText></div></a> </th> <!--8.6 Mitglieder des Textilbündnisses</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/8-6-a/ "><div class=responsiveText>8.6 - Mitglieder des Textilbündnisses</div></a> </th> <!--8.6 Mitglieder des Textilbündnisses</div></a> </th>-->
                       </tr>
 
 
@@ -3160,12 +3160,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/9/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/9.png" alt=" - Ziel 9" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/9.png" alt="Industrie, Innovationen und Infrastruktur - Ziel 9" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/9/"><span class="visible-xs"> 9 - <span></a>
+            <a href="/dns-indicators/9/"><span class="visible-xs"> 9 - <span>Industrie, Innovationen und Infrastruktur</a>
           </h3>
           
             
@@ -3181,8 +3181,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/9-1-a/ "><div class=responsiveText></div></a> </th> <!--9.1.a Private und öffentliche Ausgaben für Forschung und Entwicklung</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/9-1-a/ "><div class=responsiveText>9.1.a - Private und öffentliche Ausgaben für Forschung und Entwicklung</div></a> </th> <!--9.1.a Private und öffentliche Ausgaben für Forschung und Entwicklung</div></a> </th>-->
                       </tr>
 
 
@@ -3233,8 +3233,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/9-1-b/ "><div class=responsiveText></div></a> </th> <!--9.1.b Breitbandausbau &minus; Anteil der Haushalte mit Zugang zu Gigabit-Breitbandversorgung</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/9-1-b/ "><div class=responsiveText>9.1.b - Breitbandausbau – Anteil der Haushalte mit Zugang zu Gigabit-Breitbandversorgung</div></a> </th> <!--9.1.b Breitbandausbau &minus; Anteil der Haushalte mit Zugang zu Gigabit-Breitbandversorgung</div></a> </th>-->
                       </tr>
 
 
@@ -3284,12 +3284,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/10/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/10.png" alt=" - Ziel 10" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/10.png" alt="Weniger Ungleichheiten - Ziel 10" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/10/"><span class="visible-xs"> 10 - <span></a>
+            <a href="/dns-indicators/10/"><span class="visible-xs"> 10 - <span>Weniger Ungleichheiten</a>
           </h3>
           
             
@@ -3305,8 +3305,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/10-1-a/ "><div class=responsiveText></div></a> </th> <!--10.1 Ausländische Schulabsolventinnen und Schulabsolventen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/10-1-a/ "><div class=responsiveText>10.1 - Ausländische Schulabsolventinnen und Schulabsolventen</div></a> </th> <!--10.1 Ausländische Schulabsolventinnen und Schulabsolventen</div></a> </th>-->
                       </tr>
 
 
@@ -3359,8 +3359,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/10-2-a/ "><div class=responsiveText></div></a> </th> <!--10.2 Gini-Koeffizient des Einkommens nach Sozialtransfers</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/10-2-a/ "><div class=responsiveText>10.2 - Gini-Koeffizient des Einkommens nach Sozialtransfers</div></a> </th> <!--10.2 Gini-Koeffizient des Einkommens nach Sozialtransfers</div></a> </th>-->
                       </tr>
 
 
@@ -3410,12 +3410,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/11/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/11.png" alt=" - Ziel 11" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/11.png" alt="Nachhaltige Städte und Gemeinden - Ziel 11" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/11/"><span class="visible-xs"> 11 - <span></a>
+            <a href="/dns-indicators/11/"><span class="visible-xs"> 11 - <span>Nachhaltige Städte und Gemeinden</a>
           </h3>
           
             
@@ -3431,8 +3431,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-1-a/ "><div class=responsiveText></div></a> </th> <!--11.1.a Anstieg der Siedlungs- und Verkehrsfläche in ha pro Tag</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-1-a/ "><div class=responsiveText>11.1.a - Anstieg der Siedlungs- und Verkehrsfläche in ha pro Tag</div></a> </th> <!--11.1.a Anstieg der Siedlungs- und Verkehrsfläche in ha pro Tag</div></a> </th>-->
                       </tr>
 
 
@@ -3483,8 +3483,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-1-b/ "><div class=responsiveText></div></a> </th> <!--11.1.b Freiraumverlust</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-1-b/ "><div class=responsiveText>11.1.b - Freiraumverlust</div></a> </th> <!--11.1.b Freiraumverlust</div></a> </th>-->
                       </tr>
 
 
@@ -3535,166 +3535,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-1-c/ "><div class=responsiveText></div></a> </th> <!--11.1.c Siedlungsdichte</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-              
-            
-              
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-2-a/ "><div class=responsiveText></div></a> </th> <!--11.2.a Endenergieverbrauch im Güterverkehr</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-              
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-2-b/ "><div class=responsiveText></div></a> </th> <!--11.2.b Endenergieverbrauch im Personenverkehr</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-              
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-2-c/ "><div class=responsiveText></div></a> </th> <!--11.2.c Erreichbarkeit von Mittel- und Oberzentren mit öffentlichen Verkehrsmitteln</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-1-c/ "><div class=responsiveText>11.1.c - Siedlungsdichte</div></a> </th> <!--11.1.c Siedlungsdichte</div></a> </th>-->
                       </tr>
 
 
@@ -3747,8 +3589,112 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-3-a/ "><div class=responsiveText></div></a> </th> <!--11.3 Überlastung durch Wohnkosten</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-2-a/ "><div class=responsiveText>11.2.a - Endenergieverbrauch im Güterverkehr</div></a> </th> <!--11.2.a Endenergieverbrauch im Güterverkehr</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+              
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-2-b/ "><div class=responsiveText>11.2.b - Endenergieverbrauch im Personenverkehr</div></a> </th> <!--11.2.b Endenergieverbrauch im Personenverkehr</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+              
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-2-c/ "><div class=responsiveText>11.2.c - Erreichbarkeit von Mittel- und Oberzentren mit öffentlichen Verkehrsmitteln</div></a> </th> <!--11.2.c Erreichbarkeit von Mittel- und Oberzentren mit öffentlichen Verkehrsmitteln</div></a> </th>-->
                       </tr>
 
 
@@ -3801,8 +3747,62 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/11-4-a/ "><div class=responsiveText></div></a> </th> <!--11.4 Zahl der Objekte in der Deutschen Digitalen Bibliothek</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-3-a/ "><div class=responsiveText>11.3 - Überlastung durch Wohnkosten</div></a> </th> <!--11.3 Überlastung durch Wohnkosten</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+              
+            
+              
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/11-4-a/ "><div class=responsiveText>11.4 - Zahl der Objekte in der Deutschen Digitalen Bibliothek</div></a> </th> <!--11.4 Zahl der Objekte in der Deutschen Digitalen Bibliothek</div></a> </th>-->
                       </tr>
 
 
@@ -3852,12 +3852,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/12/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/12.png" alt=" - Ziel 12" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/12.png" alt="Verantwortungsvolle Konsum- und Produktionsmuster - Ziel 12" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/12/"><span class="visible-xs"> 12 - <span></a>
+            <a href="/dns-indicators/12/"><span class="visible-xs"> 12 - <span>Verantwortungsvolle Konsum- und Produktionsmuster</a>
           </h3>
           
             
@@ -3873,8 +3873,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/12-1-a/ "><div class=responsiveText></div></a> </th> <!--12.1.a Marktanteil von Produkten mit staatlichen Umweltzeichen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/12-1-a/ "><div class=responsiveText>12.1.a - Marktanteil von Produkten mit staatlichen Umweltzeichen</div></a> </th> <!--12.1.a Marktanteil von Produkten mit staatlichen Umweltzeichen</div></a> </th>-->
                       </tr>
 
 
@@ -3925,8 +3925,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/12-1-b/ "><div class=responsiveText></div></a> </th> <!--12.1.ba Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - Rohstoffeinsatz</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/12-1-b/ "><div class=responsiveText>12.1.ba - Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - Rohstoffeinsatz</div></a> </th> <!--12.1.ba Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - Rohstoffeinsatz</div></a> </th>-->
                       </tr>
 
 
@@ -3965,8 +3965,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/12-1-b/ "><div class=responsiveText></div></a> </th> <!--12.1.bb Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - Energieverbrauch</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/12-1-b/ "><div class=responsiveText>12.1.bb - Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - Energieverbrauch</div></a> </th> <!--12.1.bb Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - Energieverbrauch</div></a> </th>-->
                       </tr>
 
 
@@ -4005,8 +4005,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/12-1-b/ "><div class=responsiveText></div></a> </th> <!--12.1.bc Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - CO<sub>2</sub>-Emissionen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/12-1-b/ "><div class=responsiveText>12.1.bc - Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - CO<sub>2</sub>-Emissionen</div></a> </th> <!--12.1.bc Globale Umweltinanspruchnahme durch den Konsum privater Haushalte - CO<sub>2</sub>-Emissionen</div></a> </th>-->
                       </tr>
 
 
@@ -4033,60 +4033,6 @@ var translations = {
                       <tr> <td colspan="10"> &nbsp; </td> </tr>
                     </table>
 
-                  
-                
-              
-            
-              
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-
-                     <!--7-1-ab_2-->
-
-
-                    <table class="table table-hover tableresp">
-                      <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/12-2-a/ "><div class=responsiveText></div></a> </th> <!--12.2 Umweltmanagement EMAS</div></a> </th>-->
-                      </tr>
-
-
-
-
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-                       <!--7-1-ab_2_target-->
-                      
-                        
-                      
-
-
-
-
-
-                      <tr> <td colspan="10"> &nbsp; </td> </tr>
-                    </table>
-
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
-                  
-                
-                  
-                    <!--history_indicator_2-->
-                   <!--7-1-ab-->
                   
                 
               
@@ -4103,8 +4049,62 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/12-3-ab/ "><div class=responsiveText></div></a> </th> <!--12.3.a Anteil des Papiers mit Blauem Engel am Gesamtpapierverbrauch der unmittelbaren Bundesverwaltung</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/12-2-a/ "><div class=responsiveText>12.2 - Umweltmanagement EMAS</div></a> </th> <!--12.2 Umweltmanagement EMAS</div></a> </th>-->
+                      </tr>
+
+
+
+
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+                       <!--7-1-ab_2_target-->
+                      
+                        
+                      
+
+
+
+
+
+                      <tr> <td colspan="10"> &nbsp; </td> </tr>
+                    </table>
+
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+                
+              
+            
+              
+                
+                  
+                    <!--history_indicator_2-->
+                   <!--7-1-ab-->
+                  
+
+                     <!--7-1-ab_2-->
+
+
+                    <table class="table table-hover tableresp">
+                      <tr>
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/12-3-ab/ "><div class=responsiveText>12.3.a - Anteil des Papiers mit Blauem Engel am Gesamtpapierverbrauch der unmittelbaren Bundesverwaltung</div></a> </th> <!--12.3.a Anteil des Papiers mit Blauem Engel am Gesamtpapierverbrauch der unmittelbaren Bundesverwaltung</div></a> </th>-->
                       </tr>
 
 
@@ -4143,8 +4143,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/12-3-ab/ "><div class=responsiveText></div></a> </th> <!--12.3.b CO<sub>2</sub>-Emissionen von handelsüblichen Kraftfahrzeugen der öffentlichen Hand</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/12-3-ab/ "><div class=responsiveText>12.3.b - CO<sub>2</sub>-Emissionen von handelsüblichen Kraftfahrzeugen der öffentlichen Hand</div></a> </th> <!--12.3.b CO<sub>2</sub>-Emissionen von handelsüblichen Kraftfahrzeugen der öffentlichen Hand</div></a> </th>-->
                       </tr>
 
 
@@ -4189,12 +4189,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/13/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/13.png" alt=" - Ziel 13" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/13.png" alt="Maßnahmen zum Klimaschutz - Ziel 13" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/13/"><span class="visible-xs"> 13 - <span></a>
+            <a href="/dns-indicators/13/"><span class="visible-xs"> 13 - <span>Maßnahmen zum Klimaschutz</a>
           </h3>
           
             
@@ -4210,8 +4210,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/13-1-a/ "><div class=responsiveText></div></a> </th> <!--13.1.a Treibhausgasemissionen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/13-1-a/ "><div class=responsiveText>13.1.a - Treibhausgasemissionen</div></a> </th> <!--13.1.a Treibhausgasemissionen</div></a> </th>-->
                       </tr>
 
 
@@ -4264,8 +4264,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/13-1-b/ "><div class=responsiveText></div></a> </th> <!--13.1.b Internationale Klimafinanzierung zur Reduktion von Treibhausgasen und zur Anpassung an den Klimawandel</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/13-1-b/ "><div class=responsiveText>13.1.b - Internationale Klimafinanzierung zur Reduktion von Treibhausgasen und zur Anpassung an den Klimawandel</div></a> </th> <!--13.1.b Internationale Klimafinanzierung zur Reduktion von Treibhausgasen und zur Anpassung an den Klimawandel</div></a> </th>-->
                       </tr>
 
 
@@ -4315,12 +4315,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/14/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/14.png" alt=" - Ziel 14" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/14.png" alt="Leben unter Wasser - Ziel 14" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/14/"><span class="visible-xs"> 14 - <span></a>
+            <a href="/dns-indicators/14/"><span class="visible-xs"> 14 - <span>Leben unter Wasser</a>
           </h3>
           
             
@@ -4336,8 +4336,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/14-1-a/ "><div class=responsiveText></div></a> </th> <!--14.1.aa Nährstoffeinträge in Küstengewässer und Meeresgewässer &minus; Stickstoffeintrag über die Zuflüsse in die Ostsee</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/14-1-a/ "><div class=responsiveText>14.1.aa - Nährstoffeinträge in Küstengewässer und Meeresgewässer – Stickstoffeintrag über die Zuflüsse in die Ostsee</div></a> </th> <!--14.1.aa Nährstoffeinträge in Küstengewässer und Meeresgewässer &minus; Stickstoffeintrag über die Zuflüsse in die Ostsee</div></a> </th>-->
                       </tr>
 
 
@@ -4376,8 +4376,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/14-1-a/ "><div class=responsiveText></div></a> </th> <!--14.1.ab Nährstoffeinträge in Küstengewässer und Meeresgewässer &minus; Stickstoffeintrag über die Zuflüsse in die Nordsee</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/14-1-a/ "><div class=responsiveText>14.1.ab - Nährstoffeinträge in Küstengewässer und Meeresgewässer – Stickstoffeintrag über die Zuflüsse in die Nordsee</div></a> </th> <!--14.1.ab Nährstoffeinträge in Küstengewässer und Meeresgewässer &minus; Stickstoffeintrag über die Zuflüsse in die Nordsee</div></a> </th>-->
                       </tr>
 
 
@@ -4423,8 +4423,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/14-1-b/ "><div class=responsiveText></div></a> </th> <!--14.1.b Anteil der nachhaltig befischten Fischbestände in Nord- und Ostsee</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/14-1-b/ "><div class=responsiveText>14.1.b - Anteil der nachhaltig befischten Fischbestände in Nord- und Ostsee</div></a> </th> <!--14.1.b Anteil der nachhaltig befischten Fischbestände in Nord- und Ostsee</div></a> </th>-->
                       </tr>
 
 
@@ -4474,12 +4474,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/15/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/15.png" alt=" - Ziel 15" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/15.png" alt="Leben an Land - Ziel 15" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/15/"><span class="visible-xs"> 15 - <span></a>
+            <a href="/dns-indicators/15/"><span class="visible-xs"> 15 - <span>Leben an Land</a>
           </h3>
           
             
@@ -4495,8 +4495,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/15-1-a/ "><div class=responsiveText></div></a> </th> <!--15.1 Artenvielfalt und Landschaftsqualität</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/15-1-a/ "><div class=responsiveText>15.1 - Artenvielfalt und Landschaftsqualität</div></a> </th> <!--15.1 Artenvielfalt und Landschaftsqualität</div></a> </th>-->
                       </tr>
 
 
@@ -4549,8 +4549,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/15-2-a/ "><div class=responsiveText></div></a> </th> <!--15.2 Eutrophierung der Ökosysteme</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/15-2-a/ "><div class=responsiveText>15.2 - Eutrophierung der Ökosysteme</div></a> </th> <!--15.2 Eutrophierung der Ökosysteme</div></a> </th>-->
                       </tr>
 
 
@@ -4603,8 +4603,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/15-3-ab/ "><div class=responsiveText></div></a> </th> <!--15.3.a Erhalt bzw. Wiederaufbau von Wäldern in Entwicklungsländern unter dem REDD+-Regelwerk</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/15-3-ab/ "><div class=responsiveText>15.3.a - Erhalt bzw. Wiederaufbau von Wäldern in Entwicklungsländern unter dem REDD+-Regelwerk</div></a> </th> <!--15.3.a Erhalt bzw. Wiederaufbau von Wäldern in Entwicklungsländern unter dem REDD+-Regelwerk</div></a> </th>-->
                       </tr>
 
 
@@ -4643,8 +4643,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/15-3-ab/ "><div class=responsiveText></div></a> </th> <!--15.3.b Deutsche bilaterale Bruttoentwicklungsausgaben zur Umsetzung des Übereinkommens der VN zur Bekämpfung der Wüstenbildung</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/15-3-ab/ "><div class=responsiveText>15.3.b - Deutsche bilaterale Bruttoentwicklungsausgaben zur Umsetzung des Übereinkommens der VN zur Bekämpfung der Wüstenbildung</div></a> </th> <!--15.3.b Deutsche bilaterale Bruttoentwicklungsausgaben zur Umsetzung des Übereinkommens der VN zur Bekämpfung der Wüstenbildung</div></a> </th>-->
                       </tr>
 
 
@@ -4689,12 +4689,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/16/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/16.png" alt=" - Ziel 16" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/16.png" alt="Frieden, Gerechtigkeit und starke Institutionen - Ziel 16" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/16/"><span class="visible-xs"> 16 - <span></a>
+            <a href="/dns-indicators/16/"><span class="visible-xs"> 16 - <span>Frieden, Gerechtigkeit und starke Institutionen</a>
           </h3>
           
             
@@ -4710,8 +4710,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/16-1-a/ "><div class=responsiveText></div></a> </th> <!--16.1 Straftaten</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/16-1-a/ "><div class=responsiveText>16.1 - Straftaten</div></a> </th> <!--16.1 Straftaten</div></a> </th>-->
                       </tr>
 
 
@@ -4764,8 +4764,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/16-2-a/ "><div class=responsiveText></div></a> </th> <!--16.2 Anzahl der in betroffenen Weltregionen durchgeführten Projekte zur Sicherung, Registrierung und Zerstörung von Kleinwaffen und leichten Waffen durch Deutschland</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/16-2-a/ "><div class=responsiveText>16.2 - Anzahl der in betroffenen Weltregionen durchgeführten Projekte zur Sicherung, Registrierung und Zerstörung von Kleinwaffen und leichten Waffen durch Deutschland</div></a> </th> <!--16.2 Anzahl der in betroffenen Weltregionen durchgeführten Projekte zur Sicherung, Registrierung und Zerstörung von Kleinwaffen und leichten Waffen durch Deutschland</div></a> </th>-->
                       </tr>
 
 
@@ -4818,8 +4818,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/16-3-ab/ "><div class=responsiveText></div></a> </th> <!--16.3.a Corruption Perception Index in Deutschland</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/16-3-ab/ "><div class=responsiveText>16.3.a - Corruption Perception Index in Deutschland</div></a> </th> <!--16.3.a Corruption Perception Index in Deutschland</div></a> </th>-->
                       </tr>
 
 
@@ -4858,8 +4858,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/16-3-ab/ "><div class=responsiveText></div></a> </th> <!--16.3.b Corruption Perception Index in den Partnerländern der deutschen Entwicklungszusammenarbeit</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/16-3-ab/ "><div class=responsiveText>16.3.b - Corruption Perception Index in den Partnerländern der deutschen Entwicklungszusammenarbeit</div></a> </th> <!--16.3.b Corruption Perception Index in den Partnerländern der deutschen Entwicklungszusammenarbeit</div></a> </th>-->
                       </tr>
 
 
@@ -4904,12 +4904,12 @@ var translations = {
     </div><div class="goal">
       <div class="frameStatus">
         <a href="/dns-indicators/17/">
-          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/17.png" alt=" - Ziel 17" width="95%" min-height="60px"/>
+          <img src="https://g205sdgs.github.io/sdg-indicators/assets/img/goals/dns/de/17.png" alt="Partnerschaften zur Erreichung der Ziele - Ziel 17" width="95%" min-height="60px"/>
         </a>
       </div>
       <div>
           <h3 class="status-goal">
-            <a href="/dns-indicators/17/"><span class="visible-xs"> 17 - <span></a>
+            <a href="/dns-indicators/17/"><span class="visible-xs"> 17 - <span>Partnerschaften zur Erreichung der Ziele</a>
           </h3>
           
             
@@ -4925,8 +4925,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/17-1-a/ "><div class=responsiveText></div></a> </th> <!--17.1 Anteil öffentlicher Entwicklungsausgaben am Bruttonationaleinkommen</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/17-1-a/ "><div class=responsiveText>17.1 - Anteil öffentlicher Entwicklungsausgaben am Bruttonationaleinkommen</div></a> </th> <!--17.1 Anteil öffentlicher Entwicklungsausgaben am Bruttonationaleinkommen</div></a> </th>-->
                       </tr>
 
 
@@ -4979,8 +4979,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/17-2-a/ "><div class=responsiveText></div></a> </th> <!--17.2 Anzahl der Studierenden und Forschenden aus Entwicklungsländern sowie LDCs pro Jahr</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/17-2-a/ "><div class=responsiveText>17.2 - Anzahl der Studierenden und Forschenden aus Entwicklungsländern sowie LDCs pro Jahr</div></a> </th> <!--17.2 Anzahl der Studierenden und Forschenden aus Entwicklungsländern sowie LDCs pro Jahr</div></a> </th>-->
                       </tr>
 
 
@@ -5033,8 +5033,8 @@ var translations = {
 
                     <table class="table table-hover tableresp">
                       <tr>
-                        <th width="10%"> <div class=responsiveText></div> </th>
-                        <th colspan="9"> <a href=" /dns-indicators/17-3-a/ "><div class=responsiveText></div></a> </th> <!--17.3 Einfuhren aus am wenigsten entwickelten Ländern</div></a> </th>-->
+                        <th width="10%"> <div class=responsiveText>Indikator</div> </th>
+                        <th colspan="9"> <a href=" /dns-indicators/17-3-a/ "><div class=responsiveText>17.3 - Einfuhren aus am wenigsten entwickelten Ländern</div></a> </th> <!--17.3 Einfuhren aus am wenigsten entwickelten Ländern</div></a> </th>-->
                       </tr>
 
 
@@ -5123,7 +5123,7 @@ var translations = {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/dns-indicators/assets/js/sdg.js?v=20220314131540'></script><script src="/dns-indicators/assets/js/chartColors.js?v=20220314131540"></script><script>
+<script src='/dns-indicators/assets/js/sdg.js?v=20220314132309'></script><script src="/dns-indicators/assets/js/chartColors.js?v=20220314132309"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
