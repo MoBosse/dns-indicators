@@ -7,9 +7,9 @@
   <h1>{{ t.summary.status_summary }}</h1>
 
   {%- for goalreport in site.data.reporting.goals -%}
-    {%- assign goal_number = goalreport.goal -%}
-    {%- assign goal_short_key = goal_number | append: '-short' -%}
-    {%- assign goal_short = t.global_goals[goal_short_key] -%}
+    {%- assign goal_number = goalreport.goal -%} <!--7-->
+    {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
+    {%- assign goal_short = t.global_goals[goal_short_key] -%} <!--Bezahlbare und saubere Energie-->
     <div class="goal">
       <div class="frameStatus">
         <a href="{{ site.baseurl }}{{ baseurl_folder }}/{{ goal_number }}/">
@@ -24,7 +24,7 @@
             {% for group in goal_indicators %}
               {% for indicator in group.items %}
                 {% for i in (1..3) %}
-                  {% assign hty_active = "history_active_" | append: i %}
+                  {% assign hty_active = "history_active_" | append: i %} <!--history_active_2-->
                   {% assign hty_indicator = "history_indicator_" | append: i %}  <!--history_indicator_2-->
                   {% assign idc_sort_order = indicator["indicator_sort_order"] %} <!--7-1-ab-->
                   {% if indicator[hty_active] == true %}
