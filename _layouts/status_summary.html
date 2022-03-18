@@ -146,8 +146,7 @@
                       {% assign target_trans = target_trans | append: '_' | append: multi_target %} <!--multi_target_3-->
                       {% assign target_year_1_key = target_key | append: '_1_year' %} <!--indicator_2_target_1_year-->
                       {% assign target_key = target_key | append: '_' | append: multi_target %}  <!--indicator_2_target_3-->
-
-                      {{target_key}}
+                      
                       <!--Check for old targets-->
                       {% assign old_target_key = target_key | append: '_old' %} <!--indicator_2_target_3_old-->
                       {% if indicator[old_target_key] %}
@@ -156,9 +155,7 @@
                         {% assign cases = '' | split: ',' %}
                       {% endif %}
 
-                      {{ cases }}
-
-                      {% for case in ceses %}
+                      {% for case in cases %}
                         {% assign target_trans = target_trans | append: case %} <!--multi_target_3_old-->
                         {% assign target_key = target_key | append: case %} <!--indicator_1_target_old-->
                         <!-- TARGET !!!!!!!!!!!!!!!!-->
