@@ -58,9 +58,9 @@
                     <!--Check for old targets-->
                     {% assign old_target_key = target_key | append: '_old' %} <!--indicator_1_target_old-->
                     {% if indicator[old_target_key] %}
-                      {% assing cases = '_old,_new' | split: ',' %}
+                      {% assign cases = '_old,_new' | split: ',' %}
                     {% else %}
-                      {% assing cases = '' | split: ',' %}
+                      {% assign cases = '' | split: ',' %}
                     {% endif %}
 
                     {% for case in cases %}
@@ -150,9 +150,9 @@
                       <!--Check for old targets-->
                       {% assign old_target_key = target_key | append: '_old' %} <!--indicator_2_target_3_old-->
                       {% if indicator[old_target_key] %}
-                        {% assing cases = '_old,_new' | split: ',' %}
+                        {% assign cases = '_old,_new' | split: ',' %}
                       {% else %}
-                        {% assing cases = '' | split: ',' %}
+                        {% assign cases = '' | split: ',' %}
                       {% endif %}
 
                       {% for case in ceses %}
