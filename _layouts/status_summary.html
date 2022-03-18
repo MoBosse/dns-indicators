@@ -176,7 +176,7 @@
                             {% assign year_key = single_indicator_key | append: "_target_" | append: multi_target | append: case  | replace: '-','' | append:'_year_' | append: letter %}
                             {% if indicator[year_key] %}
                               <!--check if year is valid or not-->
-                              {% if (multi_target > 1 and indicator[year_key] < indicator[previous_target_year_key]) %}
+                              {% if (multi_target > 1 and indicator[year_key] < indicator[previous_target_year_key]) and case != '_old' %}
                                 {% assign opacity = ' style="opacity: 0.2"' %}
                               {% else %}
                                 {% assign opacity = '' %}
@@ -224,7 +224,7 @@
                               {% endif %}
 
                               <!--check if year is valid or not-->
-                              {% if (multi_target > 1 and indicator[year_key] < indicator[previous_target_year_key]) %}
+                              {% if (multi_target > 1 and indicator[year_key] < indicator[previous_target_year_key]) and case != '_old' %}
                                 {% assign opacity = ' style="opacity: 0.2"' %}
                               {% else %}
                                 {% assign opacity = '' %}
@@ -256,6 +256,11 @@
                 </table>
               {% endif %} <!--if indicator[weather_active_key] == true-->
             {% endfor %}  <!--for single_indicator in (1..3)-->
+            {% if is_there_an_old_target_in_this_indicator == 'true' %}
+              <div>
+                {{ t.status.old_target_footnote }}
+              </div>
+            {% endif %}
           {% endfor %}  <!--for indicator in group.items-->
         {% endfor %}  <!--for group in goal_indicators-->
         <div class="divider">
