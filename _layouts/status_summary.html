@@ -33,8 +33,6 @@
               {% assign additional_cells = letters.size %}
               {% if indicator[weather_active_key] == true %}
 
-                {% assign indicator_key = idc_sort_order | append: "_" | append: single_indicator %} <!--7-1-ab_2-->
-
                 <!--Check for multiple targets-->
                 {% assign target_key = single_indicator_key | append: "_target" %}  <!--indicator_2_target-->
                 {% assign target_year_key = target_key | append: "_year" %} <!--indicator_2_target_year-->
@@ -79,7 +77,7 @@
                         <th> <div class=responsiveText>{{ t.general.year }}</div> </th>
                         {% for letter in letters %}
                           {% assign year_key = single_indicator_key | append: case | replace: '-','' | append:'_year_' | append: letter %}
-                          {{year_key}}
+
                           {% if indicator[year_key] %}
                             {% if letter == 'i' or letter == 'h' or letter == 'g' or letter == 'f' or letter == 'e' %}
                               <td width="10%" align="center" class="hidden-xs"> <p><span class="responsiveText hidden-xs">{{ indicator[year_key] }}</span></p> </td>
@@ -206,7 +204,7 @@
                         </tr>
                         <!-- !!!!!!!!!!!!!!!!-->
                         <!-- ITEM !!!!!!!!!!!!!!!!-->
-                        {% if case == '_old' %}<tr  style="opacity: 0.2">{% else %}<tr>{% endif %}
+                        {% if case == '_old' %}<tr  style="opacity: 0.4">{% else %}<tr>{% endif %}
                           <th> <div class=responsiveText>{{ t.general.status }}</div> </th>
                           {% for letter in letters %}
                             {% assign item_key = single_indicator_key | append: "_target_" | append: multi_target | append: case  | replace: '-','' | append:'_item_' | append: letter %}
@@ -256,12 +254,14 @@
                 </table>
               {% endif %} <!--if indicator[weather_active_key] == true-->
             {% endfor %}  <!--for single_indicator in (1..3)-->
-            {% if is_there_an_old_target_in_this_indicator == 'true' %}
+          {% endfor %}  <!--for indicator in group.items-->
+          {% if is_there_an_old_target_in_this_indicator == 'true' %}
+            <table class="table table-hover tableresp">
               <div>
                 {{ t.status.old_target_footnote }}
               </div>
-            {% endif %}
-          {% endfor %}  <!--for indicator in group.items-->
+            </table>
+          {% endif %}
         {% endfor %}  <!--for group in goal_indicators-->
         <div class="divider">
         </div>
