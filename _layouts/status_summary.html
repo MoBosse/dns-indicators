@@ -143,9 +143,10 @@
                   {% elsif target_trans == 'multi_target' %}
                     {% for multi_target in (1..3) %}
                       {% assign target_key = single_indicator_key | append: "_target" %}  <!--indicator_2_target-->
-                      {% assign target_trans = 'multi_target' | append: '_' | append: multi_target %} <!--multi_target_3-->
-                      {% assign target_year_1_key = target_key | append: '_1_year' %} <!--indicator_2_target_1_year-->
                       {% assign target_key = target_key | append: '_' | append: multi_target %}  <!--indicator_2_target_3-->
+                      {% assign target_year_1_key = target_key | append: '_1_year' %} <!--indicator_2_target_1_year-->
+
+                      {% assign target_trans = 'multi_target' | append: '_' | append: multi_target %} <!--multi_target_3-->
 
                       <!--Check for old targets-->
                       {% assign old_target_key = target_key | append: '_old' %} <!--indicator_2_target_3_old-->
@@ -157,7 +158,7 @@
 
                       {% for case in cases %}
                         {% assign target_trans = 'multi_target' | append: '_' | append: multi_target | append: case %} <!--multi_target_3_old-->
-                        {% assign target_key = target_key | append: case %} <!--indicator_1_target_old-->
+                        {% assign target_key = single_indicator_key | append: '_target' | append: case %} <!--indicator_1_target_old-->
                         <!-- TARGET !!!!!!!!!!!!!!!!-->
                         <tr>
                           <th> <div class=responsiveText>{{ t.weather.target_trans }}{{target_trans}}</div></th>
@@ -178,7 +179,7 @@
                               {% endif %}
 
                               {% if letter == 'i' or letter == 'h' or letter == 'g' or letter == 'f' or letter == 'e' %}
-                                <td width="10%" align="center" class="hidden-xs"> <p {{ opacity }}><span class="responsiveText hidden-xs">{{ indicator[year_key] }}</span></p> </td>
+                                <td width="10%" align="center" class="hidden-xs"> <p {{ opacity }}><span class="responsiveText hidden-xs">{{ indicator[year_key] }}{{year_key}}</span></p> </td>
                               {% else %}
                                 <td width="10%" align="center"> <p {{ opacity }}><span class="responsiveText">{{ indicator[year_key] }}</span></p> </td>
                               {% endif %}
