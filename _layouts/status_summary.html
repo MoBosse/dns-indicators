@@ -68,8 +68,8 @@
                       {% assign target_key = single_indicator_key | append: '_target' | append: case | replace: '-','' %} <!--indicator_1_target_old-->
                       <!-- TARGET !!!!!!!!!!!!!!!!-->
                       <tr>
-                        <th> <div class=responsiveText>{{ t.status.target_trans }}{{target_trans}}</div></th>
-                        <td colspan="9"> <div class=responsiveText>{{ indicator[target_key] }}{{target_key}}</div> </td>
+                        <th> <div class=responsiveText>{{ t.status[target_trans] }}</div></th>
+                        <td colspan="9"> <div class=responsiveText>{{ indicator[target_key] }}</div> </td>
                       </tr>
                       <!-- !!!!!!!!!!!!!!!!-->
                       <!-- YEAR !!!!!!!!!!!!!!!!-->
@@ -143,7 +143,8 @@
                   {% elsif target_trans == 'multi_target' %}
                     {% for multi_target in (1..3) %}
                       {% assign target_key = single_indicator_key | append: "_target_" | append: multi_target %}  <!--indicator_2_target-->
-                      {% assign previous_target_year_key = single_indicator_key | append: '_target_' | append: multi_target | minus: 1 | append: '_year' %} <!--indicator_2_target_1_year-->
+                      {% assign previous_mult_target = multi_target | minus: 1 %}
+                      {% assign previous_target_year_key = single_indicator_key | append: '_target_' | append: previous_mult_target | append: '_year' %} <!--indicator_2_target_1_year-->
 
                       {% assign target_trans = 'multi_target' | append: '_' | append: multi_target %} <!--multi_target_3-->
 
