@@ -156,7 +156,7 @@
                       {% endif %}
 
                       {% for case in cases %}
-                        {% assig case = case | replace: '-','' %}
+                        {% assign case = case | replace: '-','' %}
                         {% assign target_trans = 'multi_target' | append: '_' | append: multi_target | append: case %} <!--multi_target_3_old-->
                         {% assign target_key = single_indicator_key | append: '_target_' | append: multi_target | append: case %} <!--indicator_1_target_old-->
                         <!-- TARGET !!!!!!!!!!!!!!!!-->
