@@ -160,8 +160,8 @@
                         {% assign target_key = single_indicator_key | append: '_target_' | append: multi_target | append: case  | replace: '-',''%} <!--indicator_2_target_3_old-->
                         <!-- TARGET !!!!!!!!!!!!!!!!-->
                         <tr>
-                          <th> <div class=responsiveText>{{ t.status.target_trans }}{{target_trans}}</div></th>
-                          <td colspan="9"> <div class=responsiveText>{{ indicator[target_key] }}{{target_key}}</div> </td>
+                          <th> <div class=responsiveText>{{ t.status[target_trans] }}</div></th>
+                          <td colspan="9"> <div class=responsiveText>{{ indicator[target_key] }}{{target_year_1_key}}</div> </td>
                         </tr>
                         <!-- !!!!!!!!!!!!!!!!-->
                         <!-- YEAR !!!!!!!!!!!!!!!!-->
@@ -171,7 +171,7 @@
                             {% assign year_key = single_indicator_key | append: "_target_" | append: multi_target | append: case  | replace: '-','' | append:'_year_' | append: letter %}
                             {% if indicator[year_key] %}
                               <!--check if year is valid or not-->
-                              {% if multi_target > 1 and indicator[year_key] > indicator[target_year_1_key] %}
+                              {% if multi_target > 1 and indicator[year_key] < indicator[target_year_1_key] %}
                                 {% assign opacity = ' style="opacity: 0.2"' %}
                               {% else %}
                                 {% assign opacity = '' %}
