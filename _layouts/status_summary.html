@@ -143,7 +143,7 @@
                   {% elsif target_trans == 'multi_target' %}
                     {% for multi_target in (1..3) %}
                       {% assign target_key = single_indicator_key | append: "_target_" | append: multi_target %}  <!--indicator_2_target-->
-                      {% assign target_year_1_key = target_key | append: '_1_year' %} <!--indicator_2_target_1_year-->
+                      {% assign target_year_1_key = single_indicator_key | append: '_target_1_year' %} <!--indicator_2_target_1_year-->
 
                       {% assign target_trans = 'multi_target' | append: '_' | append: multi_target %} <!--multi_target_3-->
 
