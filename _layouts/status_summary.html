@@ -76,7 +76,7 @@
                       <tr>
                         <th> <div class=responsiveText>{{ t.general.year }}</div> </th>
                         {% for letter in letters %}
-                          {% assign year_key = target_key | append:'_year_' | append: letter %}
+                          {% assign year_key = single_indicator_key | append: '_target' | append: case | replace: '-','' | append:'_year_' | append: letter %}
                           {% if indicator[year_key] %}
                             {% if letter == 'i' or letter == 'h' or letter == 'g' or letter == 'f' or letter == 'e' %}
                               <td width="10%" align="center" class="hidden-xs"> <p><span class="responsiveText hidden-xs">{{ indicator[year_key] }}</span></p> </td>
@@ -105,7 +105,7 @@
                       <tr>
                         <th> <div class=responsiveText>{{ t.general.status }}</div> </th>
                         {% for letter in letters %}
-                          {% assign item_key = target_key | append:'_item_' | append: letter %}
+                          {% assign item_key = single_indicator_key | append: '_target' | append: case | replace: '-','' | append:'_item_' | append: letter %}
                           {% if indicator[item_key] %}
 
                             {% if indicator[item_key] == 'Sonne' %}
