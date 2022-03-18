@@ -67,13 +67,13 @@
                       {% assign target_trans = 'single_target' | append: case | replace: '-','' %} <!--single_target_old-->
                       {% assign target_key = single_indicator_key | append: '_target' | append: case | replace: '-','' %} <!--indicator_1_target_old-->
                       <!-- TARGET !!!!!!!!!!!!!!!!-->
-                      {% if case == '_old' %}<tr  style="opacity: 0.2">{% else %}<tr>{% endif %}
+                      {% if case == '_old' %}<tr  style="opacity: 0.4">{% else %}<tr>{% endif %}
                         <th> <div class=responsiveText>{{ t.status[target_trans] }}</div></th>
                         <td colspan="9"> <div class=responsiveText>{{ indicator[target_key] }}</div> </td>
                       </tr>
                       <!-- !!!!!!!!!!!!!!!!-->
                       <!-- YEAR !!!!!!!!!!!!!!!!-->
-                      {% if case == '_old' %}<tr  style="opacity: 0.2">{% else %}<tr>{% endif %}
+                      {% if case == '_old' %}<tr  style="opacity: 0.4">{% else %}<tr>{% endif %}
                         <th> <div class=responsiveText>{{ t.general.year }}</div> </th>
                         {% for letter in letters %}
                           {% assign year_key = single_indicator_key | append: case | replace: '-','' | append:'_year_' | append: letter %}
@@ -103,7 +103,7 @@
                       </tr>
                       <!-- !!!!!!!!!!!!!!!!-->
                       <!-- ITEM !!!!!!!!!!!!!!!!-->
-                      {% if case == '_old' %}<tr  style="opacity: 0.2">{% else %}<tr>{% endif %}
+                      {% if case == '_old' %}<tr  style="opacity: 0.4">{% else %}<tr>{% endif %}
                         <th> <div class=responsiveText>{{ t.general.status }}</div> </th>
                         {% for letter in letters %}
                           {% assign item_key = single_indicator_key | append: case | replace: '-','' | append:'_item_' | append: letter %}
@@ -162,20 +162,20 @@
                         {% assign target_trans = 'multi_target_' | append: multi_target | append: case  | replace: '-','' %} <!--multi_target_3_old-->
                         {% assign target_key = single_indicator_key | append: '_target_' | append: multi_target | append: case  | replace: '-',''%} <!--indicator_2_target_3_old-->
                         <!-- TARGET !!!!!!!!!!!!!!!!-->
-                        {% if case == '_old' %}<tr  style="opacity: 0.2">{% else %}<tr>{% endif %}
+                        {% if case == '_old' %}<tr  style="opacity: 0.4">{% else %}<tr>{% endif %}
                           <th> <div class=responsiveText>{{ t.status[target_trans] }}</div></th>
                           <td colspan="9"> <div class=responsiveText>{{ indicator[target_key] }}</div> </td>
                         </tr>
                         <!-- !!!!!!!!!!!!!!!!-->
                         <!-- YEAR !!!!!!!!!!!!!!!!-->
-                        {% if case == '_old' %}<tr  style="opacity: 0.2">{% else %}<tr>{% endif %}
+                        {% if case == '_old' %}<tr  style="opacity: 0.4">{% else %}<tr>{% endif %}
                           <th> <div class=responsiveText>{{ t.general.year }}</div> </th>
                           {% for letter in letters %}
                             {% assign year_key = single_indicator_key | append: "_target_" | append: multi_target | append: case  | replace: '-','' | append:'_year_' | append: letter %}
                             {% if indicator[year_key] %}
                               <!--check if year is valid or not-->
                               {% if (multi_target > 1 and indicator[year_key] < indicator[previous_target_year_key]) and case != '_old' %}
-                                {% assign opacity = ' style="opacity: 0.2"' %}
+                                {% assign opacity = ' style="opacity: 0.4"' %}
                               {% else %}
                                 {% assign opacity = '' %}
                               {% endif %}
@@ -223,7 +223,7 @@
 
                               <!--check if year is valid or not-->
                               {% if (multi_target > 1 and indicator[year_key] < indicator[previous_target_year_key]) and case != '_old' %}
-                                {% assign opacity = ' style="opacity: 0.2"' %}
+                                {% assign opacity = ' style="opacity: 0.4"' %}
                               {% else %}
                                 {% assign opacity = '' %}
                               {% endif %}
@@ -255,14 +255,14 @@
               {% endif %} <!--if indicator[weather_active_key] == true-->
             {% endfor %}  <!--for single_indicator in (1..3)-->
           {% endfor %}  <!--for indicator in group.items-->
-          {% if is_there_an_old_target_in_this_indicator == 'true' %}
-            <table class="table table-hover tableresp">
-              <div>
-                {{ t.status.old_target_footnote }}
-              </div>
-            </table>
-          {% endif %}
         {% endfor %}  <!--for group in goal_indicators-->
+        {% if is_there_an_old_target_in_this_indicator == 'true' %}
+          <table class="table table-hover tableresp">
+            <div>
+              {{ t.status.old_target_footnote }}
+            </div>
+          </table>
+        {% endif %}
         <div class="divider">
         </div>
       </div>
