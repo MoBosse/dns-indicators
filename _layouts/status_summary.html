@@ -152,10 +152,11 @@
                       {% if indicator[old_target_key] %}
                         {% assign cases = '_old,_new' | split: ',' %}
                       {% else %}
-                        {% assign cases = '' | split: ',' %}
+                        {% assign cases = '-' | split: ',' %}
                       {% endif %}
 
                       {% for case in cases %}
+                        {% assig case = case | replace: '-','' %}
                         {% assign target_trans = 'multi_target' | append: '_' | append: multi_target | append: case %} <!--multi_target_3_old-->
                         {% assign target_key = single_indicator_key | append: '_target_' | append: multi_target | append: case %} <!--indicator_1_target_old-->
                         <!-- TARGET !!!!!!!!!!!!!!!!-->
