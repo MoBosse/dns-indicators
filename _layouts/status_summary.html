@@ -168,7 +168,7 @@
                         <tr>
                           <th> <div class=responsiveText>{{ t.general.year }}</div> </th>
                           {% for letter in letters %}
-                            {% assign year_key = target_key | append:'_year_' | append: letter %}
+                            {% assign year_key = single_indicator_key | append: "_target" | append:'_year_' | append: letter %}
                             {% if indicator[year_key] %}
                               <!--check if year is valid or not-->
                               {% if multi_target > 1 and indicator[year_key] > indicator[target_year_1_key] %}
