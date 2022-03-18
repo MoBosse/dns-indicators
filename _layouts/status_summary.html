@@ -60,12 +60,12 @@
                     {% if indicator[old_target_key] %}
                       {% assign cases = '_old,_new' | split: ',' %}
                     {% else %}
-                      {% assign cases = '' | split: ',' %}
+                      {% assign cases = '-' | split: ',' %}
                     {% endif %}
 
                     {% for case in cases %}
-                      {% assign target_trans = target_trans | append: case %} <!--single_target_old-->
-                      {% assign target_key = target_key | append: case %} <!--indicator_1_target_old-->
+                      {% assign target_trans = 'single_target' | append: case | replace: '-','' %} <!--single_target_old-->
+                      {% assign target_key = single_indicator_key | append: '_target' | append: case | replace: '-','' %} <!--indicator_1_target_old-->
                       <!-- TARGET !!!!!!!!!!!!!!!!-->
                       <tr>
                         <th> <div class=responsiveText>{{ t.status.target_trans }}{{target_trans}}</div></th>
