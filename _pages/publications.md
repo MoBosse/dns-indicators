@@ -4,7 +4,7 @@ permalink: /publications/
 layout: page
 ---
 
-<button name="button" onclick="createPdf()">Click me</button>
+<button name="button" onclick="opensdg.createPdf()">Click me</button>
 
 
 ### Indikatorenberichte
