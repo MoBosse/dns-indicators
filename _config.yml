@@ -113,7 +113,7 @@ menu:
   #  translation_key: menu.facts_sdg
   - path: /publications/
     translation_key: menu.publications
-  - path: /report/
+  - path: /createReport/
     translation_key: Download report
 
 
