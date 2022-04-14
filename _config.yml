@@ -152,6 +152,7 @@ custom_css:
 
 custom_js:
   - /assets/js/chartColors.js
+  - /assets/js/pdf.js
 
 create_goals:
   layout: goal-by-target
