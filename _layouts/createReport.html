@@ -4,16 +4,23 @@
 
 <div id="main-content" class="container reportingstatus">
 
+
+  <div id="pdfContent">
+    {%- for goalreport in site.data.reporting.goals -%}
+      {%- assign goal_number = goalreport.goal -%} <!--7-->
+      {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
+      {%- assign goal_short = t.global_goals[goal_short_key] -%}
+
+      <h1> {{ goal_short}}</h1>
+
+    {%- endfor -%}
+  </div>
+
   <h1>Download PDF</h1>
-  {%- assign pdfInput = 'Test text' -%}
-  <button name="button" onclick="opensdg.createPdf(\'' + pdfInput + '\')">Click me</button>
 
-  {%- for goalreport in site.data.reporting.goals -%}
-    {%- assign goal_number = goalreport.goal -%} <!--7-->
-    {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
-    {%- assign goal_short = t.global_goals[goal_short_key] -%}
-  {%- endfor -%}
+  <button name="button" onclick="opensdg.createPdf()">Click me</button>
 
+  
 
 </div>
 {% include footer.html %}
