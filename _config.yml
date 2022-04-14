@@ -113,6 +113,8 @@ menu:
   #  translation_key: menu.facts_sdg
   - path: /publications/
     translation_key: menu.publications
+  - path: /report/
+    translation_key: Download report
 
 
 # Configure the text (or "translation key") to be used on the
