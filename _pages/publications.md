@@ -4,9 +4,6 @@ permalink: /publications/
 layout: page
 ---
 
-<button name="button" onclick="opensdg.createPdf()">Click me</button>
-
-
 ### Indikatorenberichte
 <br>
 [Nachhaltige Entwicklung in Deutschland - Indikatorenbericht 2021](https://sustainabledevelopment-deutschland.github.io/assets/publications/reports/de/2021.pdf)
