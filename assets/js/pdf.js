@@ -1,4 +1,4 @@
-opensdg.createPdf = function (content) {
+opensdg.createPdf = function () {
 
     // var doc = new jsPDF();
     // //doc.text(document.getElementById("input").value, 10, 10);
