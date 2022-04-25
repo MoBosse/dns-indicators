@@ -10,9 +10,9 @@
 <div id="app">
   <div id="capture" v-bind:style="{backgroundColor:color}" class="bg-lime-500 rounded text-center py-8 text-white">
       <h4>{{ message }}</h4>
+    <input type="text" v-model="message">
+    <input type="color" v-model="color">
   </div>
-  <input type="text" v-model="message">
-  <input type="color" v-model="color">
 </div>
 
 <!--
