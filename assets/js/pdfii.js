@@ -1,13 +1,13 @@
 //Generate PDF
 function generatePDF() {
     pdf = "";
-$("#downloadbtn").hide();
-$("#genmsg").show();
+    $("#downloadbtn").hide();
+    $("#genmsg").show();
     html2canvas($(".print-wrap:eq(0)")[0], { allowTaint: true }).then(function(canvas) {
 
         calculatePDF_height_width(".print-wrap",0);
         var imgData = canvas.toDataURL("image/png", 1.0);
-  pdf = new jsPDF('p', 'pt', [PDF_Width, PDF_Height]);
+        pdf = new jsPDF('p', 'pt', [PDF_Width, PDF_Height]);
         pdf.addImage(imgData, 'JPG', top_left_margin, top_left_margin, HTML_Width, HTML_Height);
 
     });
