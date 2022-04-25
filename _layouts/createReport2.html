@@ -8,17 +8,17 @@
 <button class="bg-white" @click="saveCanvas()">Save Canvas</button>
 
 <div id="app">
-  <div id="capture" v-bind:style="{backgroundcolor:color}" class="bg-lime-500 rounded text-center py-8 text-white">
+  <div id="capture" v-bind:style="{backgroundcolor:color}" class="bg-lime-500 rounded text-center">
       <h4>{{ message }}</h4>
   </div>
   <input type="text" v-model="message">
   <input type="color" v-model="color">
 </div>
-
+<!--
 <div id="main-content" class="container">
   {%- for goalreport in site.data.reporting.goals -%}
-    {%- assign goal_number = goalreport.goal -%} <!--7-->
-    {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
+    {%- assign goal_number = goalreport.goal -%}
+    {%- assign goal_short_key = goal_number | append: '-short' -%}
     {%- assign goal_short = t.global_goals[goal_short_key] -%}
     {% assign goal_indicators = site.data.meta | where: 'sdg_goal', goal_number | sort: 'indicator_sort_order' | group_by: 'target_id' %}
     {% for group in goal_indicators %}
@@ -43,7 +43,7 @@
       {% endfor %}
     {% endfor %}
   {%- endfor -%}
-</div>
+</div> -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
