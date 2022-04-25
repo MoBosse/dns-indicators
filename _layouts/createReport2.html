@@ -5,39 +5,41 @@
 <div id="main-content" class="container">
   <h1>Download PDF</h1>
 </div>
-<button class="bg-black" @click="saveCanvas()">Save Canvas</button>
+<button class="bg-white" @click="saveCanvas()">Save Canvas</button>
 
 <div id="capture" class="bg-lime-500 rounded text-center">
     <h4>Hello world!</h4>
 </div>
 
-{%- for goalreport in site.data.reporting.goals -%}
-  {%- assign goal_number = goalreport.goal -%} <!--7-->
-  {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
-  {%- assign goal_short = t.global_goals[goal_short_key] -%}
-  {% assign goal_indicators = site.data.meta | where: 'sdg_goal', goal_number | sort: 'indicator_sort_order' | group_by: 'target_id' %}
-  {% for group in goal_indicators %}
-    {% for indicator in group.items %}
-      <div class="indicator">
-        <div class="heading indicator goal-{{ goal_number }}">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-4 col-md-3 col-lg-2">
-                <img src="{{ site.goal_image_base }}/{{ current_language }}/{{ goal_number }}.png" alt="{{ goal_short }} - {{ t.general.goal }} {{ goal_number }}" title="{{ goalShort }}" />
-              </div>
-              <div class="col-xs-8 col-md-9 col-lg-10">
-                <h1 class="titles goal-{{goal_number}}" title="{{ t.general.section }}: {{ indicator.section }}">
-                  {{ indicator.section }} – <i title="{{ t.general.postulate}}: {{ indicator.postulate }}">{{ indicator.postulate }}</i>
-                </h1>
-                <h2 class="titles goal-{{goal_number}}">{{ t.general.indicator }} {{ indicator.indicator_display }}: {{ indicator.indicator | get_indicator_name }}</h2>
+<div id="main-content" class="container">
+  {%- for goalreport in site.data.reporting.goals -%}
+    {%- assign goal_number = goalreport.goal -%} <!--7-->
+    {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
+    {%- assign goal_short = t.global_goals[goal_short_key] -%}
+    {% assign goal_indicators = site.data.meta | where: 'sdg_goal', goal_number | sort: 'indicator_sort_order' | group_by: 'target_id' %}
+    {% for group in goal_indicators %}
+      {% for indicator in group.items %}
+        <div class="indicator">
+          <div class="heading indicator goal-{{ goal_number }}">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-4 col-md-3 col-lg-2">
+                  <img src="{{ site.goal_image_base }}/{{ current_language }}/{{ goal_number }}.png" alt="{{ goal_short }} - {{ t.general.goal }} {{ goal_number }}" title="{{ goalShort }}" />
+                </div>
+                <div class="col-xs-8 col-md-9 col-lg-10">
+                  <h1 class="titles goal-{{goal_number}}" title="{{ t.general.section }}: {{ indicator.section }}">
+                    {{ indicator.section }} – <i title="{{ t.general.postulate}}: {{ indicator.postulate }}">{{ indicator.postulate }}</i>
+                  </h1>
+                  <h2 class="titles goal-{{goal_number}}">{{ t.general.indicator }} {{ indicator.indicator_display }}: {{ indicator.indicator | get_indicator_name }}</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
-{%- endfor -%}
+  {%- endfor -%}
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
