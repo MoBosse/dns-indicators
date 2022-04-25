@@ -22,7 +22,7 @@ opensdg.createPdf = function () {
         'width': margins.width,
         'elementHandlers': specialElementHandlers
       },
-    function(dispoae){
+    function(dispose){
       doc.save('Test.pdf');
     }, margins);
     //doc.text(content, 10, 10);
