@@ -6,6 +6,7 @@
   <h1>Download PDF</h1>
   <button name="button" onclick="opensdg.createPdf()">Click me</button>
 </div>
+
 <div id="pdf_content" class="container reportingstatus">
   {%- for goalreport in site.data.reporting.goals -%}
     {%- assign goal_number = goalreport.goal -%} <!--7-->
@@ -15,19 +16,21 @@
     {% for group in goal_indicators %}
       {% for indicator in group.items %}
         <h3>{{ goal_short }}</h3>
-        <div class="heading indicator goal-{{ goal_number }}">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-4 col-md-3 col-lg-2">
-                <img src="{{ site.goal_image_base }}/{{ current_language }}/{{ goal_number }}.png" alt="{{ goal_short }} - {{ t.general.goal }} {{ goal_number }}" title="{{ goalShort }}" />
-              </div>
-              <!-- <div class="col-xs-8 col-md-9 col-lg-10">
-                <h1 class="titles goal-{{goal_number}}" title="{{ t.general.section }}: {{ indicator.section }}">
-                  {{ meta.section }} – <i title="{{ t.general.postulate}}: {{ indicator.postulate }}">{{ indicator.postulate }}</i>
-                </h1>
+        <div class="indicator-{{ indicator.indicator_display }}">
+          <div class="heading indicator goal-{{ goal_number }}">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-4 col-md-3 col-lg-2">
+                  <img src="{{ site.goal_image_base }}/{{ current_language }}/{{ goal_number }}.png" alt="{{ goal_short }} - {{ t.general.goal }} {{ goal_number }}" title="{{ goalShort }}" />
+                </div>
+                <!-- <div class="col-xs-8 col-md-9 col-lg-10">
+                  <h1 class="titles goal-{{goal_number}}" title="{{ t.general.section }}: {{ indicator.section }}">
+                    {{ meta.section }} – <i title="{{ t.general.postulate}}: {{ indicator.postulate }}">{{ indicator.postulate }}</i>
+                  </h1>
 
-                <h2 class="titles goal-{{goal_number}}">{{ t.general.indicator }} {{ indicator.indicator_display }}: {{ indicator.indicator | get_indicator_name }}</h2>
-              </div> -->
+                  <h2 class="titles goal-{{goal_number}}">{{ t.general.indicator }} {{ indicator.indicator_display }}: {{ indicator.indicator | get_indicator_name }}</h2>
+                </div> -->
+              </div>
             </div>
           </div>
         </div>
