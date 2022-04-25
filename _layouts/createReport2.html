@@ -45,11 +45,17 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="{{ site.baseurl }}/assets/js/html2canvas.js"></script>
 <script>
-  function saveCanvas(){
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-        document.body.appendChild(canvas)
-    });
-  };
+  var app = new Vue({
+    el: '#app',
+    methods: {
+      saveCanvas(){
+          html2canvas(document.querySelector("#capture")).then(
+              canvas => {
+              document.body.appendChild(canvas)
+              });
+      }
+    }
+  })
 </script>
 
 {% include footer.html %}
