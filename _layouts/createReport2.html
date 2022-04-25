@@ -7,6 +7,15 @@
 
 </div>
 
-
+<div id="capture" class="bg-lime-500 rounded text-center">
+    <h4>Hello world?!</h4>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="html2canvas.min.js"></script>
+<script>
+  html2canvas(document.querySelector("#capture")).then(canvas => {
+      document.body.appendChild(canvas)
+  });
+</script>
 
 {% include footer.html %}
