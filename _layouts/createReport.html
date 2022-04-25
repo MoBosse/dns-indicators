@@ -7,6 +7,22 @@
   <button name="button" onclick="opensdg.createPdf()">Click me</button>
 </div>
 
+
+<iframe frameBorder="0" id="sample-pdf" style="right:0; top:53px; bottom:0; height:400px; width:100%"></iframe>
+<a id="pdf-download-link" title="Download PDF File">Download PDF file</a>
+<a id="pdf-showiFrame-link" title="Show PDF in iFrame">Show PDF in iFrame</a>
+<div class="print-wrap page1">
+    <h3>Sample page one for demo</h3>
+</div>
+<div class="print-wrap page2">
+    <h3>Sample page two for demo</h3>
+</div>
+<div class="print-wrap page3">
+    <h3>Sample page three for demo</h3>
+</div>
+
+
+
 <div id="pdf_content" class="container reportingstatus">
   {%- for goalreport in site.data.reporting.goals -%}
     {%- assign goal_number = goalreport.goal -%} <!--7-->
