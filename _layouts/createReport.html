@@ -6,12 +6,15 @@
   <h1>Download PDF</h1>
   <button name="button" onclick="opensdg.createPdf()">Click me</button>
 </div>
+<div id="pdf_content" class="container reportingstatus">
+  {%- for goalreport in site.data.reporting.goals -%}
+    {%- assign goal_number = goalreport.goal -%} <!--7-->
+    {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
+    {%- assign goal_short = t.global_goals[goal_short_key] -%}
+    <h3>{{ goal_short }}</h3>
+  {%- endfor -%}
 
-{%- for goalreport in site.data.reporting.goals -%}
-  {%- assign goal_number = goalreport.goal -%} <!--7-->
-  {%- assign goal_short_key = goal_number | append: '-short' -%} <!--7-short-->
-  {%- assign goal_short = t.global_goals[goal_short_key] -%}
-  <h3>{{ goal_short }}</h3>
-{%- endfor -%}
+
+</div>
 
 {% include footer.html %}
