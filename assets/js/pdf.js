@@ -1,6 +1,6 @@
 opensdg.createPdf = function () {
 
-    var doc = new jsPDF();
+    let doc = new jsPDF();
     var content = document.getElementById('pdf_content');
     console.log("c: ",content);
 
