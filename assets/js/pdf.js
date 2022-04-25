@@ -5,4 +5,3 @@ opensdg.createPdf = function () {
     doc.text("Hello world!", 10, 10);
     doc.save("output.pdf");
 };
-​
