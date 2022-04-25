@@ -7,8 +7,12 @@
 </div>
 <button class="bg-white" @click="saveCanvas()">Save Canvas</button>
 
-<div id="capture" class="bg-lime-500 rounded text-center">
-    <h4>Hello world!</h4>
+<div id="app">
+  <div id="capture" v-bind:style="{backgroundcolor:color}" class="bg-lime-500 rounded text-center py-8 text-white">
+      <h4>{{ message }}</h4>
+  </div>
+  <input type="text" v-model="message">
+  <input type="color" v-model="color">
 </div>
 
 <div id="main-content" class="container">
@@ -47,6 +51,10 @@
 <script>
   var app = new Vue({
     el: '#app',
+    data: {
+      message: 'hfhbh',
+      color: '#ccc'
+    },
     methods: {
       saveCanvas(){
           html2canvas(document.querySelector("#capture")).then(
