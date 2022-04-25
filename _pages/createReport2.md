@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Download Report
-permalink: /createReport/
+permalink: /createReport2/
 layout: createReport2
 ---
