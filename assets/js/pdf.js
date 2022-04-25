@@ -1,14 +1,11 @@
 opensdg.createPdf = function () {
 
-    let doc = new jsPDF();
-    var content = document.getElementById('pdf_content');
-    console.log("c: ",content);
+    var doc = new jsPDF();
 
-    doc.html(document.getElementById('pdf_content'),{
-      callback: function (doc){
-        doc.save("output2.pdf");
-      }
-    });
+    source = $('#pdf_content')[0];
+    doc.fromHTML(source);
+    doc.save("output2.pdf");
+
     //doc.text(content, 10, 10);
     //doc.save("output.pdf");
 };
