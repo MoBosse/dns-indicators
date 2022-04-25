@@ -8,12 +8,13 @@
 <button class="bg-white" @click="saveCanvas()">Save Canvas</button>
 
 <div id="app">
-  <div id="capture" v-bind:style="{backgroundcolor:color}" class="bg-lime-500 rounded text-center">
+  <div id="capture" v-bind:style="{backgroundcolor:color}" class="bg-lime-500 rounded text-center py-8 text-white">
       <h4>{{ message }}</h4>
   </div>
   <input type="text" v-model="message">
   <input type="color" v-model="color">
 </div>
+
 <!--
 <div id="main-content" class="container">
   {%- for goalreport in site.data.reporting.goals -%}
