@@ -52,7 +52,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="{{ site.baseurl }}/assets/js/html2canvas.min.js"></script>
 <script>
-  var doc = new jsPDF('p', 'pt', 'letter');
+  var doc = new jsPDF('p', 'mm', 'letter');
 
 
 </script>
@@ -69,8 +69,8 @@
           // var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
           var image = canvas.toDataURL("image/png", 1.0);
           console.log("Image: ",image);
-          doc.addPage( 500, 800);
-          doc.addImage(image, 'JPG', 15, 15, 2480, 3508);
+          doc.addPage( 210, 297);
+          doc.addImage(image, 'JPG', 15, 15, 210, 297);
           // window.location.href=image;
           doc.save('Test.pdf');
         });
