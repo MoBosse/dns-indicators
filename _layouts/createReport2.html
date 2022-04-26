@@ -55,14 +55,15 @@
   var app = new Vue({
     el: '#app',
     data: {
-      message: 'zzzzz',
-      color: 'yellow'
+      message: 'sssss',
+      color: 'orange'
     },
     methods: {
       saveCanvas(){
           html2canvas(document.querySelector("#capture")).then(canvas => {//document.body.appendChild(canvas)});
           var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
           console.log("Image: ",image);
+          window.location.href=image;
         });
       }
     }
