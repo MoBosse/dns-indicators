@@ -60,7 +60,7 @@
     },
     methods: {
       saveCanvas(){
-          html2canvas(document.querySelector("#capture")).then(canvas => {//document.body.appendChild(canvas)});
+          html2canvas(document.querySelector("#capture"), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
           var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
           console.log("Image: ",image);
           window.location.href=image;
@@ -69,9 +69,16 @@
     }
   })
 </script>
-<!--
-<script>
-  html2canvas(document.querySelector("#capture")).then(canvas => {document.body.appendChild(canvas)});
-</script> -->
+
+<!-- html2canvas($(".print-wrap:eq(1)")[0], { allowTaint: true }).then(function(canvas) {
+
+    calculatePDF_height_width(".print-wrap",1);
+
+    var imgData = canvas.toDataURL("image/png", 1.0);
+    pdf.addPage(PDF_Width, PDF_Height);
+    pdf.addImage(imgData, 'JPG', top_left_margin, top_left_margin, HTML_Width, HTML_Height);
+
+}); -->
+
 
 {% include footer.html %}
