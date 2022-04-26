@@ -5,14 +5,15 @@
 <div id="main-content" class="container">
   <h1>Download PDF</h1>
 </div>
-<button class="bg-white" @click="saveCanvas()">Save Canvas</button>
+
 
 <div id="app">
-  <div id="capture" v-bind:style="{backgroundColor:color}" class="bg-lime-500 rounded text-center py-8 text-white">
+  <div id="capture" v-bind:style="{backgroundColor:color}" class="w-1/2 bg-red rounded text-center py-8 text-white">
       <h4>{{ message }}</h4>
-    <input type="text" v-model="message">
-    <input type="color" v-model="color">
   </div>
+  <input type="text" v-model="message">
+  <input type="color" v-model="color">
+  <button class="bg-black px-4 py-2 text-white rounded-full" @click="saveCanvas()">Save Canvas</button>
 </div>
 
 <!--
@@ -48,6 +49,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="{{ site.baseurl }}/assets/js/html2canvas.min.js"></script>
 <script>
   var app = new Vue({
@@ -58,17 +60,14 @@
     },
     methods: {
       saveCanvas(){
-          html2canvas(document.querySelector("#capture")).then(
-              canvas => {
-              document.body.appendChild(canvas)
-              });
+          html2canvas(document.querySelector("#capture")).then(canvas => {document.body.appendChild(canvas)});
       }
     }
   })
 </script>
-
+<!-- 
 <script>
   html2canvas(document.querySelector("#capture")).then(canvas => {document.body.appendChild(canvas)});
-</script>
+</script> -->
 
 {% include footer.html %}
