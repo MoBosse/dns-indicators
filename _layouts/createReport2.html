@@ -9,7 +9,7 @@
 
 <div id="app">
   <div id="capture" v-bind:style="{backgroundColor:color}" class="w-1/2 bg-red rounded text-center py-8 text-white">
-      <h4>{{ message }}</h4>
+      <h4>Text here</h4>
   </div>
   <input type="text" v-model="message">
   <input type="color" v-model="color">
@@ -67,7 +67,7 @@
           var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
           console.log("Image: ",image);
           doc.addPage( 500, 800);
-          doc.addImage(imgData, 'JPG', 15, 15, 500, 800);
+          doc.addImage(image, 'JPG', 15, 15, 500, 800);
           window.location.href=image;
 
         });
