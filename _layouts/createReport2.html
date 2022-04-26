@@ -53,6 +53,9 @@
 <script src="{{ site.baseurl }}/assets/js/html2canvas.min.js"></script>
 <script>
   var doc = new jsPDF('p', 'pt', 'letter');
+
+  var width = doc.internal.pageSize.getWidth();
+  var height = doc.internal.pageSize.getHeight();
 </script>
 <script>
   var app = new Vue({
@@ -64,10 +67,11 @@
     methods: {
       saveCanvas(){
           html2canvas(document.querySelector("#capture"), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
-          var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
+          // var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
+          var image = canvas.toDataURL("image/png", 1.0);
           console.log("Image: ",image);
           doc.addPage( 500, 800);
-          doc.addImage(image, 'JPG', 15, 15, 500, 800);
+          doc.addImage(image, 'JPG', 15, 15, width, height);
           window.location.href=image;
 
         });
@@ -79,15 +83,6 @@
   doc.save('Test.pdf');
 </script>
 
-<!-- html2canvas($(".print-wrap:eq(1)")[0], { allowTaint: true }).then(function(canvas) {
-
-    calculatePDF_height_width(".print-wrap",1);
-
-    var imgData = canvas.toDataURL("image/png", 1.0);
-    pdf.addPage(PDF_Width, PDF_Height);
-    pdf.addImage(imgData, 'JPG', top_left_margin, top_left_margin, HTML_Width, HTML_Height);
-
-}); -->
 
 
 {% include footer.html %}
