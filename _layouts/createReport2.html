@@ -9,7 +9,7 @@
 
 <div id="app">
   <div id="capture" v-bind:style="{backgroundColor:color}" class="w-1/2 bg-red rounded text-center py-8 text-white">
-      <h4>"Text here"</h4>
+      <h4>{{ message }}</h4>
   </div>
   <input type="text" v-model="message">
   <input type="color" v-model="color">
@@ -52,6 +52,9 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="{{ site.baseurl }}/assets/js/html2canvas.min.js"></script>
 <script>
+  var doc = new jsPDF('p', 'pt', 'letter');
+</script>
+<script>
   var app = new Vue({
     el: '#app',
     data: {
@@ -63,11 +66,17 @@
           html2canvas(document.querySelector("#capture"), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
           var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
           console.log("Image: ",image);
+          doc.addPage( 500, 800);
+          doc.addImage(imgData, 'JPG', 15, 15, 500, 800);
           window.location.href=image;
+
         });
       }
     }
   })
+</script>
+<script>
+  doc.save('Test.pdf');
 </script>
 
 <!-- html2canvas($(".print-wrap:eq(1)")[0], { allowTaint: true }).then(function(canvas) {
