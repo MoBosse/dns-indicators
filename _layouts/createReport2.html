@@ -54,8 +54,7 @@
 <script>
   var doc = new jsPDF('p', 'pt', 'letter');
 
-  var width = doc.internal.pageSize.getWidth();
-  var height = doc.internal.pageSize.getHeight();
+
 </script>
 <script>
   var app = new Vue({
@@ -71,17 +70,15 @@
           var image = canvas.toDataURL("image/png", 1.0);
           console.log("Image: ",image);
           doc.addPage( 500, 800);
-          doc.addImage(image, 'JPG', 15, 15, width, height);
+          doc.addImage(image, 'JPG', 15, 15, 2480, 3508);
           window.location.href=image;
-
+          doc.save('Test.pdf');
         });
       }
     }
   })
 </script>
-<script>
-  doc.save('Test.pdf');
-</script>
+
 
 
 
