@@ -9,8 +9,6 @@
 <script>
   function addContent(indicatorClass){
     html2canvas(document.querySelector(indicatorClass), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
-    console.log("input: ", indicatorClass);
-    //var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
     var image = canvas.toDataURL("image/png", 1.0);
     doc.addPage( 210, 297);
     doc.addImage(image, 'JPG', 15, 15, 210, 60);
