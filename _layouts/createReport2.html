@@ -3,14 +3,17 @@
 {% include header.html %}
 
 <script>
-  function addContent(indicatorClass){
-    //html2canvas(document.querySelector(indicatorClass), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
-    // var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
-    //var image = canvas.toDataURL("image/png", 1.0);
-    console.log("input: ", indicatorClass);
-    //doc.addPage( 210, 297);
-    //doc.addImage(image, 'JPG', 15, 15, 210, 20);
+  var doc = new jsPDF('p', 'mm', 'letter');
+</script>
 
+<script>
+  function addContent(indicatorClass){
+    html2canvas(document.querySelector(indicatorClass), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
+    console.log("input: ", indicatorClass);
+    //var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
+    var image = canvas.toDataURL("image/png", 1.0);
+    doc.addPage( 210, 297);
+    doc.addImage(image, 'JPG', 15, 15, 210, 60);
   }
 </script>
 
@@ -65,9 +68,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="{{ site.baseurl }}/assets/js/html2canvas.min.js"></script>
-<script>
-  var doc = new jsPDF('p', 'mm', 'letter');
-</script>
+
 
 
 <script>
