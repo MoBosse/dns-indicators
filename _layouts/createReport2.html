@@ -70,7 +70,7 @@
           var image = canvas.toDataURL("image/png", 1.0);
           console.log("Image: ",image);
           doc.addPage( 210, 297);
-          doc.addImage(image, 'JPG', 15, 15, 210, 297);
+          doc.addImage(image, 'JPG', 15, 15, 20, 297);
           // window.location.href=image;
           doc.save('Test.pdf');
         });
