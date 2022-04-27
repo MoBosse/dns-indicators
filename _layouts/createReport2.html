@@ -36,7 +36,7 @@
     {% assign goal_indicators = site.data.meta | where: 'sdg_goal', goal_number | sort: 'indicator_sort_order' | group_by: 'target_id' %}
     {% for group in goal_indicators %}
       {% for indicator in group.items %}
-        <div class="indicator_{{ indicator.indicator_display }}">
+        <div class="indicator_{{ indicator.indicator_sort_order }}">
           <div class="heading indicator goal-{{ goal_number }}">
             <div class="container">
               <div class="row">
@@ -58,7 +58,7 @@
           </div>
         </div>
         <script>
-          addContent("#indicator_{{ indicator.indicator_display }}");
+          addContent("#indicator_{{ indicator.indicator_sort_order }}");
         </script>
       {% endfor %}
     {% endfor %}
