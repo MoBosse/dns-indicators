@@ -27,7 +27,33 @@
   <button class="bg-black px-4 py-2 text-white rounded-full" @click="saveCanvas()">Save Canvas</button>
 </div>
 
-<div id="main-content" class="container">
+<div class="indicator_1-1-ab">
+  <div class="heading indicator goal-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4 col-md-3 col-lg-2">
+          <img src="{{ site.goal_image_base }}/de/1.png" alt="Keine Armut - Ziel 1" title="Keine Armut" />
+        </div>
+        <div class="col-xs-8 col-md-9 col-lg-10">
+          <h1 class="titles goal-1" title="Bereich: Armut">
+            Armut: – <i title="Postulat: Armut begrenzen">Armut begrenzen</i>
+          </h1>
+          <h2 class="titles goal-1">Indikator 1.1.a, b: Materielle Deprivation sowie erhebliche materielle Deprivation</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4>Definition</h4>
+    <p>Materielle Deprivation beschreibt den Mangel an bestimmten Gebrauchsgütern und den unfreiwilligen Verzicht auf ausgewählten Konsum aus finanziellen Gründen. Beide Indikatoren geben den Anteil der Personen an der Gesamtbevölkerung an, die als materiell depriviert (1.1.a) bzw. als erheblich materiell depriviert (1.1.b) gelten. Die (erhebliche) materielle Entbehrung trifft für alle Menschen zu, deren Haushalt von neun vorgegebenen Kriterien, welche die finanziellen Einschränkungen des Haushalts widerspiegeln, mindestens drei (erheblich materiell depriviert: mindestens vier) erfüllt.</p>
+  </div>
+</div>
+
+<script>
+  addContent("indicator_1-1-ab");
+</script>
+
+<!-- <div id="main-content" class="container">
   {%- for goalreport in site.data.reporting.goals -%}
     {%- assign goal_number = goalreport.goal -%}
     {%- assign goal_short_key = goal_number | append: '-short' -%}
@@ -62,7 +88,7 @@
       {% endfor %}
     {% endfor %}
   {%- endfor -%}
-</div>
+</div> -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
