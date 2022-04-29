@@ -9,7 +9,7 @@
 <script>
   function addContent(indicatorClass){
     var inclass = indicatorClass;
-    html2canvas(document.querySelector("."+inclass), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
+    html2canvas(document.querySelector(inclass), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
     var image = canvas.toDataURL("image/png", 1.0);
     doc.addPage( 210, 297);
     doc.addImage(image, 'JPG', 15, 15, 210, 60);
@@ -50,7 +50,7 @@
 </div>
 
 <script>
-  addContent("indicator_1-1-ab");
+  addContent(".indicator_1-1-ab");
 </script>
 
 <!-- <div id="main-content" class="container">
@@ -101,7 +101,7 @@
   var app = new Vue({
     el: '#app',
     data: {
-      message: 'sssss',
+      message: 'ssuus',
       color: 'orange'
     },
     methods: {
