@@ -108,7 +108,7 @@
     },
     methods: {
       saveCanvas(){
-          html2canvas(document.querySelector("#capture"), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
+          html2canvas(document.querySelector(".indicator_1-1-ab"), { allowTaint: true }).then(canvas => {//document.body.appendChild(canvas)});
           // var image = canvas.toDataURL("image/png").replace("image/png","image/octet-stream");
           var image = canvas.toDataURL("image/png", 1.0);
           //console.log("Image: ",image);
